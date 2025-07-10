@@ -7,9 +7,16 @@ export function DigimonCard({ digimon }: { digimon: Digimon }) {
       <h2>{digimon.name}</h2>
       <p><strong>Nível:</strong> {digimon.level}</p>
       <p><strong>Atributo:</strong> {digimon.attribute}</p>
-      <p><strong>Tipo:</strong> {digimon.type}</p>
       <p><strong>Família:</strong> {digimon.family}</p>
-      <p><strong>Ataques:</strong> {digimon.attacks}</p>
+
+      <p><strong>Ataques:</strong></p>
+      <ul>
+        {digimon.attacks?.map((attack, index) => (
+          <li key={index}>
+            <strong>{attack.name}</strong>: {attack.description}
+          </li>
+        )) ?? <li>Nenhum ataque disponível</li>}
+      </ul>
     </div>
   );
 }

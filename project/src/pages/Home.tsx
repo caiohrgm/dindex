@@ -38,7 +38,7 @@ function Home() {
 
       <div className="grid">
         {filtered.length > 0 ? (
-          filtered.slice(0, 4).map((digimon, i) => (
+          filtered.slice(0, 4).map((digimon) => (
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
               {/* <img src={digimon.image} alt={digimon.name} /> */}
               <img src={`https://corsproxy.io/?${digimon.image}`} alt={digimon.name} />
