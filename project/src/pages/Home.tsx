@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Papa from "papaparse";
 import type { Digimon } from "../types/Digimon";
 import { Link } from "react-router-dom";
+import logo from '../assets/logo.png';
 
 function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
@@ -26,7 +27,7 @@ function Home() {
 
   return (
     <div className="container">
-      <img id="logo-image" src="src/assets/logo.png" alt="Dindex Logo" />
+      <img id="logo-image" src={logo} alt="Dindex Logo" />
       <div className="search-bar">
         <input
           type="text"
@@ -40,7 +41,6 @@ function Home() {
         {filtered.length > 0 ? (
           filtered.slice(0, 4).map((digimon) => (
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
-              {/* <img src={digimon.image} alt={digimon.name} /> */}
               <img src={`https://corsproxy.io/?${digimon.image}`} alt={digimon.name} />
               <p>{digimon.name}</p>
             </Link>
