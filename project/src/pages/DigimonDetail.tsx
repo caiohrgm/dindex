@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import '../css/DigimonDetail.css';
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -8,22 +9,39 @@ function DigimonDetail() {
   const { id } = useParams();
   const [digimon, setDigimon] = useState<Digimon | null>(null);
   const [modalOpen, setModalOpen] = useState(false);
+
   const openModal = () => setModalOpen(true);
   const closeModal = () => setModalOpen(false);
-
 
   useEffect(() => {
     Papa.parse("/data/digimons.csv", {
       header: true,
       download: true,
-      complete: (results: { data: Digimon[]; }) => {
-        const data = results.data as Digimon[];
-        const selected = data[parseInt(id ?? "0")];
-        setDigimon(selected);
+      complete: (results: { data: any[] }) => {
+        const data = results.data.map((row) => {
+          return {
+            ...row,
+            family: row.family ? row.family.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
+            prior_forms: row.prior_forms ? row.prior_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
+            next_forms: row.next_forms ? row.next_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
+            lateral_next_forms: row.lateral_next_forms ? row.lateral_next_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
+            digifuse_forms: row.digifuse_forms ? row.digifuse_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
+            attacks: row.attacks ? JSON.parse(row.attacks) : [],
+          };
+        }) as Digimon[];
+
+        if (id && !isNaN(Number(id))) {
+          const numericId = Number(id);
+          const idAsString = numericId.toString();
+          const selected = data.find(d => d.id === idAsString); 
+          setDigimon(selected ?? null);
+        } else {
+          console.log("NAO ACHEI NADAAA")
+          setDigimon(null); 
+        }
       }
     });
   }, [id]);
-
 
   if (!digimon) return <p>Carregando...</p>;
 
@@ -41,22 +59,12 @@ function DigimonDetail() {
 
         <img
           className="digimon-image"
-          src={digimon.image}
+          src={`https://corsproxy.io/?${digimon.image}`}
           alt={digimon.name}
           onClick={openModal}
-          style={{ cursor: "pointer" }}
+          style={{ cursor: 'pointer' }}
+          draggable={false}
         />
-        {modalOpen && (
-          <div className="modal" onClick={closeModal}>
-            <span className="close">&times;</span>
-            <img
-              className="modal-content"
-              src={digimon.image}
-              alt={digimon.name}
-              onClick={(e) => e.stopPropagation()} // pra clicar na imagem não fechar
-            />
-          </div>
-        )}
 
         <div className="section">
           <p className="label">Atributo:</p>
@@ -71,13 +79,86 @@ function DigimonDetail() {
           </div>
         </div>
 
-        {/* Adicione aqui os outros campos como família, ataques, evoluções, etc. */}
+        <div className="section">
+          <p className="label">Famílias:</p>
+          <div className="badges">
+            {digimon.family && digimon.family.length > 0 ? (
+              digimon.family.map((fam, i) => <span key={i}>{fam}</span>)
+            ) : (
+              <p>Informação desconhecida</p>
+            )}
+          </div>
+        </div>
+
+        <div className="section">
+          <p className="label">Ataques:</p>
+          {digimon.attacks && digimon.attacks.length > 0 ? (
+            digimon.attacks.map((atk, i) => (
+              <div className="attack" key={i}>
+                <strong>{atk.name}</strong>: {atk.description}
+              </div>
+            ))
+          ) : (
+            <p>Informação desconhecida</p>
+          )}
+        </div>
+
+        <div className="section">
+          <p className="label">Digivoluções Anteriores:</p>
+          <div className="evolution-list">
+            {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
+              digimon.prior_forms.map((form, i) => <span key={i}>{form}</span>)
+            ) : (
+              <p>Informação desconhecida</p>
+            )}
+          </div>
+
+          <p className="label">Digivoluções Finais:</p>
+          <div className="evolution-list">
+            {digimon.next_forms && digimon.next_forms.length > 0 ? (
+              digimon.next_forms.map((form, i) => <span key={i}>{form}</span>)
+            ) : (
+              <p>Informação desconhecida</p>
+            )}
+          </div>
+
+          <p className="label">Digivoluções Laterais:</p>
+          <div className="evolution-list">
+            {digimon.lateral_next_forms && digimon.lateral_next_forms.length > 0 ? (
+              digimon.lateral_next_forms.map((form, i) => <span key={i}>{form}</span>)
+            ) : (
+              <p>Informação desconhecida</p>
+            )}
+          </div>
+        </div>
+
+        <div className="section">
+          <p className="label">Digifusões:</p>
+          <div className="evolution-list">
+            {digimon.digifuse_forms && digimon.digifuse_forms.length > 0 ? (
+              digimon.digifuse_forms.map((form, i) => <span key={i}>{form}</span>)
+            ) : (
+              <p>Informação desconhecida</p>
+            )}
+          </div>
+        </div>
       </div>
 
-      {/* Modal da imagem se quiser */}
+      {modalOpen && (
+        <div id="imageModal" className="modal" onClick={closeModal}>
+          <span className="close" onClick={closeModal}>&times;</span>
+          <img
+            id="modalImg"
+            className="modal-content"
+            src={`https://corsproxy.io/?${digimon.image}`}
+            alt={digimon.name}
+            onClick={(e) => e.stopPropagation()}
+            draggable={false}
+          />
+        </div>
+      )}
     </>
   );
 }
 
 export default DigimonDetail;
-

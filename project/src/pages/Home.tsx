@@ -26,7 +26,7 @@ function Home() {
 
   return (
     <div className="container">
-      <img id="logo-image" src="src/assets/logo.png" alt="DigiDex Logo" />
+      <img id="logo-image" src="src/assets/logo.png" alt="Dindex Logo" />
       <div className="search-bar">
         <input
           type="text"
@@ -38,9 +38,10 @@ function Home() {
 
       <div className="grid">
         {filtered.length > 0 ? (
-          filtered.map((digimon, i) => (
-            <Link to={`/digimon/${i}`} key={i} className="card">
-              <img src={digimon.image} alt={digimon.name} />
+          filtered.slice(0, 4).map((digimon, i) => (
+            <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
+              {/* <img src={digimon.image} alt={digimon.name} /> */}
+              <img src={`https://corsproxy.io/?${digimon.image}`} alt={digimon.name} />
               <p>{digimon.name}</p>
             </Link>
           ))
