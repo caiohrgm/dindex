@@ -1,0 +1,55 @@
+import '../css/Home.css';
+
+import { useEffect, useState } from "react";
+import Papa from "papaparse";
+import type { Digimon } from "../types/Digimon";
+import { Link } from "react-router-dom";
+
+function Home() {
+  const [digimons, setDigimons] = useState<Digimon[]>([]);
+  const [search, setSearch] = useState("");
+
+  useEffect(() => {
+    Papa.parse("/data/digimons.csv", {
+      header: true,
+      download: true,
+      skipEmptyLines: true,
+      complete: (results: { data: Digimon[]; }) => {
+        setDigimons(results.data as Digimon[]);
+      },
+    });
+  }, []);
+
+  const filtered = digimons.filter(d =>
+    d.name.toLowerCase().includes(search.toLowerCase())
+  );
+
+  return (
+    <div className="container">
+      <img id="logo-image" src="src/assets/logo.png" alt="DigiDex Logo" />
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Buscar Digimon..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
+      </div>
+
+      <div className="grid">
+        {filtered.length > 0 ? (
+          filtered.map((digimon, i) => (
+            <Link to={`/digimon/${i}`} key={i} className="card">
+              <img src={digimon.image} alt={digimon.name} />
+              <p>{digimon.name}</p>
+            </Link>
+          ))
+        ) : (
+          <div className="not-found">Nenhum Digimon encontrado.</div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Home;

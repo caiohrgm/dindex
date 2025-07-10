@@ -1,0 +1,128 @@
+body {
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  /* cursor: default; */
+}
+
+.header {
+  background-color: #b0f3ea;
+  padding: 1rem;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: #222;
+}
+
+.digimon-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  background-color: #eee;
+}
+
+.section {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.label {
+  font-weight: bold;
+  color: #555;
+}
+
+.badges span {
+  background-color: #b0f3ea;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-right: 6px;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+.attack {
+  margin-bottom: 0.5rem;
+}
+
+.evolution-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0.5rem;
+}
+
+.evolution-list span {
+  background-color: #e3f7f6;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.9rem;
+}
+
+.back-button {
+  position: fixed;       
+  top: 30px;
+  left: 30px;
+  z-index: 1000;        
+}
+
+.btn-back {
+  display: inline-block;
+  background-color: #b0f3ea;
+  color: #000;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.btn-back:hover {
+  background-color: #9be3d8;
+  transform: scale(1.05);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
