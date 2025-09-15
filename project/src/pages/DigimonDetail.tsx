@@ -36,7 +36,6 @@ function DigimonDetail() {
           const selected = data.find(d => d.id === idAsString); 
           setDigimon(selected ?? null);
         } else {
-          console.log("NAO ACHEI NADAAA")
           setDigimon(null); 
         }
       }
@@ -47,11 +46,12 @@ function DigimonDetail() {
 
   return (
     <>
-      <div id="back-home-button" className="back-button">
-        <Link to="/" className="btn-back">← Voltar à Home</Link>
-      </div>
+      
 
       <div className="card">
+        <div id="back-home-button" className="back-button">
+          <Link to="/" className="btn-back">← Voltar</Link>
+        </div>
         <div className="header">
           <h1>{digimon.name}</h1>
           <p>Nível: {digimon.level}</p>
@@ -66,16 +66,21 @@ function DigimonDetail() {
           draggable={false}
         />
 
+        <p className="image-hint">
+          🔍 Clique na imagem para ampliar
+        </p>
+
         <div className="section">
           <p className="label">Atributo:</p>
           <div className="badges">
-            {digimon.attribute ? (
-              digimon.attribute.split(',').map((attr, i) => (
-                <span key={i}>{attr.trim()}</span>
-              ))
-            ) : (
-              <p>Informação desconhecida</p>
-            )}
+           {digimon.attribute ? (
+            digimon.attribute.split(',').map((attr, i) => {
+              const displayAttr = attr.trim().toLowerCase() === 'unidentified' ? 'Não identificado' : attr.trim();
+              return <span key={i}>{displayAttr}</span>;
+            })
+          ) : (
+            <p>Informação desconhecida</p>
+          )}
           </div>
         </div>
 

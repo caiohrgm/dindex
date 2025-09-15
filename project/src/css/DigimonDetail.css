@@ -71,11 +71,24 @@ body {
 }
 
 .back-button {
-  position: fixed;       
-  top: 30px;
-  left: 30px;
-  z-index: 1000;        
+  margin-bottom: 16px;      /* espaçamento embaixo */
+  display: inline-block;    /* para não quebrar layout */
 }
+
+@media (max-width: 480px) {
+  .back-button {
+    margin-bottom: 12px;
+    width: 100%;           /* ocupa toda a largura */
+    text-align: center;    /* centraliza o botão */
+  }
+
+  .btn-back {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
 
 .btn-back {
   display: inline-block;
@@ -90,6 +103,8 @@ body {
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Orbitron', sans-serif;
 }
+
+
 
 .btn-back:hover {
   background-color: #9be3d8;
@@ -112,11 +127,11 @@ body {
 }
 
 .modal-content {
-  max-width: 90vw;
-  max-height: 90vh;
+  width: 50vw;
+  height: 55vh;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.3);
+  box-shadow: 0 0 30px rgba(255,255,255,0.5);
   cursor: default;
 }
 
@@ -129,4 +144,23 @@ body {
   font-weight: bold;
   cursor: pointer;
   user-select: none;
+}
+
+.image-hint {
+  font-size: 0.9rem;
+  color: #666;          /* discreto, mas visível */
+  text-align: center;
+  margin-top: 8px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.image-hint:hover {
+  opacity: 1;           /* realce ao passar o mouse */
+  color: #333;
 }
