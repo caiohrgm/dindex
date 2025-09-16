@@ -11,7 +11,7 @@ function Home() {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    Papa.parse("/data/digimons.csv", {
+    Papa.parse("/data/digimons_filtered.csv", {
       header: true,
       download: true,
       skipEmptyLines: true,
@@ -39,7 +39,7 @@ function Home() {
 
       <div className="grid">
         {filtered.length > 0 ? (
-          filtered.slice(0, 4).map((digimon) => (
+          filtered.slice(0, 6).map((digimon) => (
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
               <img src={`https://corsproxy.io/?${digimon.image}`} alt={digimon.name} />
               <p>{digimon.name}</p>

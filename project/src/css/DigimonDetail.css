@@ -9,21 +9,33 @@ body {
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  max-width: 600px;
+  width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   overflow: hidden;
-  /* cursor: default; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .header {
-  background-color: #b0f3ea;
+  background-color: #172432;
   padding: 1rem;
   text-align: center;
+  border-radius: 5%;
 }
 
 .header h1 {
   margin: 0;
-  color: #222;
+  color: #f0f0f0;
+}
+
+.header p {
+  color: #f0f0f0;
+  font-weight: bold;
 }
 
 .digimon-image {
@@ -31,11 +43,14 @@ body {
   max-height: 300px;
   object-fit: contain;
   background-color: #eee;
+  margin: 10px 0; /* Espaço entre imagem e outros conteúdos */
 }
 
 .section {
   padding: 1rem 1.5rem;
   border-top: 1px solid #ddd;
+  width: 100%;
+  text-align: center;
 }
 
 .label {
@@ -61,6 +76,7 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 0.5rem;
+  justify-content: center; /* Centraliza as evoluções */
 }
 
 .evolution-list span {
@@ -68,18 +84,23 @@ body {
   border-radius: 20px;
   padding: 4px 12px;
   font-size: 0.9rem;
+  max-width: 100%;
+  word-break: break-word;
+  white-space: normal;
+  text-align: center;
 }
 
+
 .back-button {
-  margin-bottom: 16px;      /* espaçamento embaixo */
-  display: inline-block;    /* para não quebrar layout */
+  margin-bottom: 16px;
+  display: inline-block;
 }
 
 @media (max-width: 480px) {
   .back-button {
     margin-bottom: 12px;
-    width: 100%;           /* ocupa toda a largura */
-    text-align: center;    /* centraliza o botão */
+    width: 100%;
+    text-align: center;
   }
 
   .btn-back {
@@ -89,29 +110,26 @@ body {
   }
 }
 
-
 .btn-back {
   display: inline-block;
-  background-color: #b0f3ea;
+  background-color: #4fdfee;
   color: #000;
-  padding: 12px 20px;
+  padding: 8px 16px;
   border-radius: 12px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.2s ease;
   font-family: 'Orbitron', sans-serif;
 }
 
-
-
 .btn-back:hover {
-  background-color: #9be3d8;
+  background-color: #4ad3e3;
   transform: scale(1.05);
+  color: #f0f0f0;  
 }
 
-/* Estilo do fundo do modal */
 .modal {
   position: fixed;
   top: 0;
@@ -148,7 +166,7 @@ body {
 
 .image-hint {
   font-size: 0.9rem;
-  color: #666;          /* discreto, mas visível */
+  color: #666;
   text-align: center;
   margin-top: 8px;
   font-style: italic;
@@ -161,6 +179,224 @@ body {
 }
 
 .image-hint:hover {
-  opacity: 1;           /* realce ao passar o mouse */
+  opacity: 1;
   color: #333;
 }
+
+.badges span, .evolution-list span {
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.family-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin: 4px;
+}
+
+/* Cores por família */
+.family-badge.unknown {
+  background-color: #172432;
+  color: #e0e0e0;
+}
+
+.family-badge.dragons-roar {
+  background-color: #ffb347;
+}
+
+.family-badge.nature-spirits {
+  background-color: #8bb68b;
+}
+
+.family-badge.metal-empire {
+  background-color: #d6d6f5;
+}
+
+.family-badge.none {
+  background-color: #e0e0e0;
+}
+
+.family-badge.wind-guardians {
+  background-color: #b3ecff;
+}
+
+.family-badge.virus-busters {
+  background-color: #ffd1dc;
+}
+
+.family-badge.deep-savers {
+  background-color: #a2d5f2;
+}
+
+.family-badge.nightmare-soldiers {
+  background-color: #dab6fc;
+}
+
+.family-badge.dark-area {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.family-badge.jungle-troopers {
+  background-color: #b8e994;
+}
+
+.attribute-badge,
+.level-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 4px;
+  color: #000;
+}
+
+/* Level colors in crescent order for dark background #172432 */
+
+/* Fresh */
+.level-badge.fresh {
+  background-color: #FFFDE7; /* amarelo bem claro */
+  color: #172432;
+}
+
+/* In-Training */
+.level-badge.in-training {
+  background-color: #FFF9C4; /* amarelo claro */
+  color: #172432;
+}
+
+/* Rookie */
+.level-badge.rookie {
+  background-color: #FFF176; /* amarelo médio */
+  color: #172432;
+}
+
+/* Armor */
+.level-badge.armor {
+  background-color: #FFEE58; /* amarelo intenso */
+  color: #172432;
+}
+
+/* Burst */
+.level-badge.burst {
+  background-color: #FFEB3B; /* amarelo forte */
+  color: #172432;
+}
+
+/* Hybrid */
+.level-badge.hybrid {
+  background-color: #FDD835; /* dourado claro */
+  color: #172432;
+}
+
+/* Champion */
+.level-badge.champion {
+  background-color: #FBC02D; /* dourado médio */
+  color: #fff;
+}
+
+/* Ultimate */
+.level-badge.ultimate {
+  background-color: #F9A825; /* dourado escuro */
+  color: #fff;
+}
+
+/* Mega */
+.level-badge.mega {
+  background-color: #F57F17; /* dourado intenso */
+  color: #fff;
+}
+
+/* Ultra */
+.level-badge.ultra {
+  background-color: #FF6F00; /* laranja-dourado bem forte */
+  color: #fff;
+}
+
+/* Unknown */
+.level-badge.unknown {
+  background-color: #B0BEC5; /* cinza claro */
+  color: #172432;
+}
+
+/* Attribute colors*/
+.attribute-badge.vaccine {
+  background-color: #a8f0b0;
+}
+
+.attribute-badge.virus {
+  background-color: #e3a2e7;
+}
+
+.attribute-badge.data {
+  background-color: #6257d8;
+;
+}
+
+.attribute-badge.free {
+  background-color: #fef3c7;
+}
+
+.attribute-badge.variable {
+  background-color: #9ce0ec;
+}
+
+.attribute-badge.unknown {
+  background-color: #172432;
+  color: #e0e0e0;
+}
+
+.unknown-badge {
+  background-color: #ccc; /* cinza neutro */
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 4px;
+}
+
+/* Cores distintas para os tipos de evolução */
+.evolution-prior span {
+  background-color: #F5F5F5; /* cinza quase branco */
+  color: #1A1A1A;
+}
+
+.evolution-next span {
+  background-color: #E0E0E0; /* cinza claro */
+  color: #1A1A1A;
+}
+
+.evolution-lateral span {
+  background-color: #BDBDBD; /* cinza médio */
+  color: #fff;
+}
+
+.evolution-digifuse span {
+  background-color: #9E9E9E; /* cinza mais escuro */
+  color: #fff;
+}
+
+.attack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.attack-badge {
+  background-color: #172432;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+

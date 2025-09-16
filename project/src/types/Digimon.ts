@@ -4,8 +4,8 @@ export interface Digimon {
   level: string;
   image: string;
   attribute?: string;
-  family?: string[];  
-  attacks?: { name: string; description: string }[];
+  family?: string[];
+  attacks?: string[]; 
   prior_forms?: string[];
   next_forms?: string[];
   lateral_next_forms?: string[];

@@ -14,7 +14,7 @@ function DigimonDetail() {
   const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
-    Papa.parse("/data/digimons.csv", {
+    Papa.parse("/data/digimons_filtered.csv", {
       header: true,
       download: true,
       complete: (results: { data: any[] }) => {
@@ -22,11 +22,16 @@ function DigimonDetail() {
           return {
             ...row,
             family: row.family ? row.family.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
-            prior_forms: row.prior_forms ? row.prior_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
-            next_forms: row.next_forms ? row.next_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
-            lateral_next_forms: row.lateral_next_forms ? row.lateral_next_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
-            digifuse_forms: row.digifuse_forms ? row.digifuse_forms.replace(/[\\[\]"]/g, '').split(',').map((f: string) => f.trim()) : [],
-            attacks: row.attacks ? JSON.parse(row.attacks) : [],
+
+            prior_forms: row.prior_forms ? row.prior_forms.replace(/[\\[\]"]/g, '').split('|').map((f: string) => f.trim()) : [],
+
+            next_forms: row.next_forms ? row.next_forms.replace(/[\\[\]"]/g, '').split('|').map((f: string) => f.trim()) : [],
+
+            lateral_next_forms: row.lateral_next_forms ? row.lateral_next_forms.replace(/[\\[\]"]/g, '').split('|').map((f: string) => f.trim()) : [],
+
+            digifuse_forms: row.digifuse_forms ? row.digifuse_forms.replace(/[\\[\]"]/g, '').split('|').map((f: string) => f.trim()) : [],
+            
+            attacks: row.attacks ? row.attacks.split('|').map((atk: string) => atk.trim()) : [],
           };
         }) as Digimon[];
 
@@ -34,6 +39,7 @@ function DigimonDetail() {
           const numericId = Number(id);
           const idAsString = numericId.toString();
           const selected = data.find(d => d.id === idAsString); 
+          // const selected = data.find(d => d.id == id); 
           setDigimon(selected ?? null);
         } else {
           setDigimon(null); 
@@ -46,15 +52,18 @@ function DigimonDetail() {
 
   return (
     <>
-      
-
       <div className="card">
         <div id="back-home-button" className="back-button">
           <Link to="/" className="btn-back">← Voltar</Link>
         </div>
         <div className="header">
           <h1>{digimon.name}</h1>
-          <p>Nível: {digimon.level}</p>
+          <p>
+            Level:{' '}
+            <span className={`level-badge ${digimon.level?.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '').replace(/[^a-z-]/g, '')}`}>
+              {digimon.level}
+            </span>
+          </p>
         </div>
 
         <img
@@ -67,83 +76,96 @@ function DigimonDetail() {
         />
 
         <p className="image-hint">
-          🔍 Clique na imagem para ampliar
+          Click on the image to enlarge it.
         </p>
 
         <div className="section">
-          <p className="label">Atributo:</p>
+          <p className="label">Attribute:</p>
           <div className="badges">
            {digimon.attribute ? (
-            digimon.attribute.split(',').map((attr, i) => {
-              const displayAttr = attr.trim().toLowerCase() === 'unidentified' ? 'Não identificado' : attr.trim();
-              return <span key={i}>{displayAttr}</span>;
-            })
-          ) : (
-            <p>Informação desconhecida</p>
-          )}
+              digimon.attribute.split(',').flatMap((attr, i) => {
+                return attr.split('/').map((subAttr, j) => {
+                  const trimmed = subAttr.trim();
+                  const className = `attribute-badge ${trimmed.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '')}`;
+                  return (
+                    <span key={`${i}-${j}`} className={className}>
+                      {trimmed}
+                    </span>
+                  );
+                });
+              })
+            ) : (
+              <span className="unknown-badge">Unknown</span>
+
+            )}
           </div>
         </div>
 
         <div className="section">
-          <p className="label">Famílias:</p>
+          <p className="label">Family:</p>
           <div className="badges">
             {digimon.family && digimon.family.length > 0 ? (
-              digimon.family.map((fam, i) => <span key={i}>{fam}</span>)
+              digimon.family.map((fam, i) => {
+                const className = `family-badge ${fam.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`;
+                return <span className={className} key={i}>{fam}</span>;
+              })
             ) : (
-              <p>Informação desconhecida</p>
+              <span className="unknown-badge">Unknown</span>
+
             )}
           </div>
         </div>
 
         <div className="section">
           <p className="label">Ataques:</p>
-          {digimon.attacks && digimon.attacks.length > 0 ? (
-            digimon.attacks.map((atk, i) => (
-              <div className="attack" key={i}>
-                <strong>{atk.name}</strong>: {atk.description}
-              </div>
-            ))
-          ) : (
-            <p>Informação desconhecida</p>
-          )}
+          <div className="attack-list">
+            {digimon.attacks && digimon.attacks.length > 0 ? (
+              digimon.attacks.map((atk, i) => (
+                <span key={i} className="attack-badge">{atk}</span>
+              ))
+            ) : (
+              <span className="unknown-badge">Unknown</span>
+            )}
+          </div>
         </div>
 
+
         <div className="section">
-          <p className="label">Digivoluções Anteriores:</p>
-          <div className="evolution-list">
+          <p className="label">Prior Digivolutions:</p>
+          <div className="evolution-list evolution-prior">
             {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
               digimon.prior_forms.map((form, i) => <span key={i}>{form}</span>)
             ) : (
-              <p>Informação desconhecida</p>
+              <span className="unknown-badge">Unknown</span>
             )}
           </div>
 
-          <p className="label">Digivoluções Finais:</p>
-          <div className="evolution-list">
+          <p className="label">Next Digivolutions:</p>
+          <div className="evolution-list evolution-next">
             {digimon.next_forms && digimon.next_forms.length > 0 ? (
               digimon.next_forms.map((form, i) => <span key={i}>{form}</span>)
             ) : (
-              <p>Informação desconhecida</p>
+              <span className="unknown-badge">Unknown</span>
             )}
           </div>
 
-          <p className="label">Digivoluções Laterais:</p>
-          <div className="evolution-list">
+          <p className="label">Lateral Digivolutions:</p>
+          <div className="evolution-list evolution-lateral">
             {digimon.lateral_next_forms && digimon.lateral_next_forms.length > 0 ? (
               digimon.lateral_next_forms.map((form, i) => <span key={i}>{form}</span>)
             ) : (
-              <p>Informação desconhecida</p>
+              <span className="unknown-badge">Unknown</span>
             )}
           </div>
         </div>
 
         <div className="section">
-          <p className="label">Digifusões:</p>
-          <div className="evolution-list">
+          <p className="label">Digifusions:</p>
+          <div className="evolution-list evolution-digifuse">
             {digimon.digifuse_forms && digimon.digifuse_forms.length > 0 ? (
               digimon.digifuse_forms.map((form, i) => <span key={i}>{form}</span>)
             ) : (
-              <p>Informação desconhecida</p>
+              <span className="unknown-badge">Unknown</span>
             )}
           </div>
         </div>
