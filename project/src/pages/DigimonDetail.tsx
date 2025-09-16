@@ -14,7 +14,7 @@ function DigimonDetail() {
   const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
-    Papa.parse("/data/digimons_filtered.csv", {
+    Papa.parse("../data/digimons_filtered.csv", {
       header: true,
       download: true,
       complete: (results: { data: any[] }) => {
@@ -52,9 +52,9 @@ function DigimonDetail() {
 
   return (
     <>
-      <div className="card">
+      <div className="digimon-detail">
         <div id="back-home-button" className="back-button">
-          <Link to="/" className="btn-back">← Voltar</Link>
+          <Link to="/" className="btn-back">← Back</Link>
         </div>
         <div className="header">
           <h1>{digimon.name}</h1>
@@ -117,7 +117,7 @@ function DigimonDetail() {
         </div>
 
         <div className="section">
-          <p className="label">Ataques:</p>
+          <p className="label">Attacks:</p>
           <div className="attack-list">
             {digimon.attacks && digimon.attacks.length > 0 ? (
               digimon.attacks.map((atk, i) => (

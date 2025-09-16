@@ -5,24 +5,63 @@ body {
   padding: 2rem;
 }
 
-.card {
-  background-color: white;
+.container {
+  max-height: 90vh;   /* ajusta para caber na tela */
+  overflow-y: auto;   /* ativa scroll vertical */
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* sempre 2 colunas */
+  gap: 15px;
+  justify-content: center;               /* centraliza */
+}
+
+.digimon-detail {
+  max-width: 400px;   /* largura máxima fixa */
+  min-width: 320px;   /* garante que não fique muito estreito */
+  margin: 0 auto;     /* centraliza na tela */
+  background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  width: 100%;
-  max-width: 500px;
-  margin: 0 auto;
-  overflow: hidden;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card img {
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+
+.card {
+  width: 180px;               /* ou até 200px se quiser bem largo */
+  min-height: 200px;          /* aumenta altura para caber nome em 2 linhas */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   text-align: center;
-  word-wrap: break-word;
-  word-break: break-word;
 }
 
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  white-space: normal;   /* permite quebra de linha */
+  overflow: hidden;
+  text-overflow: clip;   /* sem reticências */
+  max-width: 100%;
+}
+
+
 .header {
-  background-color: #172432;
+  /* background-color: #172432; */
   padding: 1rem;
   text-align: center;
   border-radius: 5%;
@@ -30,11 +69,11 @@ body {
 
 .header h1 {
   margin: 0;
-  color: #f0f0f0;
+  color: #000;
 }
 
 .header p {
-  color: #f0f0f0;
+  color: #000;
   font-weight: bold;
 }
 
@@ -92,7 +131,8 @@ body {
 
 
 .back-button {
-  margin-bottom: 16px;
+  margin-bottom: 5px;
+  margin-top: 10px;
   display: inline-block;
 }
 
