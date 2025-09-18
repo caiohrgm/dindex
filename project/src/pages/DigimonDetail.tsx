@@ -14,7 +14,7 @@ function DigimonDetail() {
   const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
-    Papa.parse("../data/digimons_filtered.csv", {
+    Papa.parse("../data/ingame_digimons.csv", {
       header: true,
       download: true,
       complete: (results: { data: any[] }) => {

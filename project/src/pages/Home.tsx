@@ -1,4 +1,3 @@
-// export default Home;
 import '../css/Home.css';
 import { useEffect, useState, useRef } from "react";
 import Papa from "papaparse";
@@ -9,23 +8,28 @@ import logo from '../assets/logo.png';
 function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
   const [search, setSearch] = useState("");
-  const [visibleCount, setVisibleCount] = useState(12); // começa mostrando 12 em vez de 6
+  const [visibleCount, setVisibleCount] = useState(12);
 
   const loaderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    Papa.parse("../data/digimons_filtered.csv", {
+    Papa.parse("/data/ingame_digimons.csv", { // recomendado: arquivo em public/data/
       header: true,
       download: true,
       skipEmptyLines: true,
       complete: (results: { data: Digimon[]; }) => {
+        console.log("CSV carregado:", results.data);
         setDigimons(results.data as Digimon[]);
       },
+      error: (err: unknown) => {
+        console.error("Erro carregando CSV:", err);
+      }
     });
   }, []);
 
+  // filtro seguro (evita erro quando d.name é undefined)
   const filtered = digimons.filter(d =>
-    d.name.toLowerCase().includes(search.toLowerCase())
+    (d.name ?? '').toLowerCase().includes(search.toLowerCase())
   );
 
   // observer para scroll infinito
@@ -60,6 +64,13 @@ function Home() {
             setVisibleCount(12); // reseta quando busca
           }}
         />
+      </div>
+
+      {/* CONTADOR DE RESULTADOS */}
+      <div className="result-count">
+        {digimons.length === 0
+          ? 'Carregando...'
+          : `${filtered.length} / ${digimons.length} encontrados`}
       </div>
 
       <div className="grid">
