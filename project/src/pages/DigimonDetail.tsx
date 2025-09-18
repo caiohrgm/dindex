@@ -14,7 +14,7 @@ function DigimonDetail() {
   const closeModal = () => setModalOpen(false);
 
   useEffect(() => {
-    Papa.parse("../data/ingame_digimons.csv", {
+    Papa.parse("/ingame_digimons.csv", {
       header: true,
       download: true,
       complete: (results: { data: any[] }) => {
@@ -68,7 +68,8 @@ function DigimonDetail() {
 
         <img
           className="digimon-image"
-          src={`https://corsproxy.io/?${digimon.image}`}
+          src={`/${digimon.image.replace(/^\/?/, '')}`}
+          
           alt={digimon.name}
           onClick={openModal}
           style={{ cursor: 'pointer' }}
@@ -177,7 +178,7 @@ function DigimonDetail() {
           <img
             id="modalImg"
             className="modal-content"
-            src={`https://corsproxy.io/?${digimon.image}`}
+            src={`/${digimon.image.replace(/^\/?/, '')}`}
             alt={digimon.name}
             onClick={(e) => e.stopPropagation()}
             draggable={false}

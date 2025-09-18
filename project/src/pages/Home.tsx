@@ -13,7 +13,7 @@ function Home() {
   const loaderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    Papa.parse("/data/ingame_digimons.csv", { // recomendado: arquivo em public/data/
+    Papa.parse("/ingame_digimons.csv", { // recomendado: arquivo em public/data/
       header: true,
       download: true,
       skipEmptyLines: true,
@@ -77,8 +77,10 @@ function Home() {
         {filtered.length > 0 ? (
           filtered.slice(0, visibleCount).map((digimon) => (
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
-              <img src={`https://corsproxy.io/?${digimon.image}`} alt={digimon.name} />
-              <p>{digimon.name}</p>
+              <div className="card-content">
+                <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
+                <p>{digimon.name}</p>
+              </div>
             </Link>
           ))
         ) : (

@@ -77,6 +77,8 @@ h1 {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   color: black;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .card img {
@@ -86,10 +88,15 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
-.card {
-  cursor: pointer;
-  transition: transform 0.2s ease;
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   /* centraliza verticalmente */
+  height: 100%;              /* ocupa o espaço total do card */
 }
+
+
 
 .card:hover {
   transform: scale(1.02);
