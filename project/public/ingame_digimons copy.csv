@@ -6,11 +6,11 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 5,Aegiochusmon Holy,/digimons_images/Aegiochusmon_Holy.jpg,Ultimate,Vaccine,Unknown,Aegiomon,Jupitermon,Unknown,Unknown,Unknown,True
 6,Aegiomon,/digimons_images/Aegiomon.jpg,Champion,Vaccine,Unknown,Unknown,Aegiochusmon | Aegiochusmon Green | Aegiochusmon Blue | Aegiochusmon Dark | Aegiochusmon Holy,Unknown,Unknown,Unknown,True
 7,Aero Veedramon,/digimons_images/AeroVeedramon.jpg,Ultimate,Vaccine,Nature Spirits,Veedramon,UlforceVeedramon,Unknown,Unknown,Magnum Crush | Kaze no Shugo Kabe,True
-8,Agunimon,/digimons_images/Agunimon.jpg,Hybrid,Vaccine / Variable,,H Spirit of Flame,BurningGreymon | Aldamon | BurningGreymon,Unknown,Unknown,Burning Salamander | Salamander Break | Fire Darts | Crimson Knuckle,True
+8,Agunimon,/digimons_images/Agunimon.jpg,Hybrid,Vaccine / Variable,None,H Spirit of Flame,BurningGreymon | Aldamon | BurningGreymon,Unknown,Unknown,Burning Salamander | Salamander Break | Fire Darts | Crimson Knuckle,True
 9,Agumon,/digimons_images/Agumon.jpg,Rookie,Vaccine,Nature Spirits,Koromon,Greymon | Centarumon | Meramon | Numemon | Tyrannomon | Tuskmon | Agumon (Bond of Bravery) | Cyberdramon,BlackAgumon | SnowAgumon,Shoutmon X7F Superior Mode,Baby Flame | Surudoi Tsume | Spitfire | Cross Fight | Triple Baby Flame | Uppercut | Mach Jab,True
 10,Agumon Bond of Bravery,/digimons_images/Agumon Bond of Bravery.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 11,Airdramon,/digimons_images/Airdramon.jpg,Champion,Vaccine,Wind Guardians,Botamon,MetalGreymon (Virus) | Megadramon,Unknown,Unknown,God Tornado,True
-12,Aldamon,/digimons_images/Aldamon.jpg,Hybrid,Variable,,Spirits of Flame,EmperorGreymon | Spirits of Wind | Ice | Wood | Earth,Unknown,Unknown,Brahmashira | Brahmastra,True
+12,Aldamon,/digimons_images/Aldamon.jpg,Hybrid,Variable,None,Spirits of Flame,EmperorGreymon | Spirits of Wind | Ice | Wood | Earth,Unknown,Unknown,Brahmashira | Brahmastra,True
 13,Alphamon,/digimons_images/Alphamon.jpg,Mega,Vaccine,Virus Busters,Grademon,Alphamon Ouryuken | Ouryumon,Alphamon Ouryuken,Unknown,Seiken Gradalpha | Digital Monster X-Evolution | Kyūkyokusenjin Ouryūken | Ouryūken,True
 14,Alphamon Ouryuken,/digimons_images/Alphamon_Ouryuken.jpg,Mega,Vaccine,Virus Busters,Alphamon,Unknown,Unknown,Unknown,Kyūkyokusenjin Ouryūken | Digital Monster X-Evolution | Seiken Gradalpha,True
 15,Ancient Wisemon,/digimons_images/AncientWisemon.jpg,Mega,Virus,Unknown,Unknown,Unknown,Unknown,Unknown,Laplace no Ma,True
@@ -82,119 +82,119 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 81,Clavis Angemon,/digimons_images/ClavisAngemon.jpg,Mega,Vaccine,Wind Guardians,Unknown,Unknown,Unknown,Unknown,Unknown,True
 82,Clockmon,/digimons_images/Clockmon.jpg,Champion,Data,Metal Empire,Solarmon,Unknown,Unknown,Shoutmon X7F Superior Mode,Unknown,True
 83,Coelamon,/digimons_images/Coelamon.jpg,Champion,Data,Deep Savers,Crabmon,Unknown,Unknown,Unknown,Variable Darts | Kamitsuki | Water Bullet,True
-84,Coredramon (Blue),/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-85,Coredramon (Green),/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+84,Coredramon (Blue),/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+85,Coredramon (Green),/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 86,Coronamon,/digimons_images/Coronamon.jpg,Rookie,Vaccine,Dragon's Roar,Sunmon,Firamon,Unknown,Unknown,Corona-knuckle,True
-87,Craniummon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+87,Craniummon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 88,Crescemon,/digimons_images/Crescemon.jpg,Ultimate,Data,Deep Savers,Lekismon,Dianamon,Unknown,Unknown,Unknown,True
-89,Crossmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+89,Crossmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 90,Cyberdramon,/digimons_images/Cyberdramon.jpg,Ultimate,Vaccine,Wind Guardians,Strikedramon,Justimon (Blitz Arm),Unknown,Unknown,Erase Claw,True
-91,Cyclomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-92,Dagomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-93,Dark Super Starmon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
+91,Cyclomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+92,Dagomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+93,Dark Super Starmon,/digimons_images/no image,Ultimate,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
 94,Darkdramon,/digimons_images/Darkdramon.jpg,Mega,Virus,Dark Area,Tankdramon,Chaosmon | BanchoLeomon | UltimateChaosmon | BanchoLeomon | Varodurumon | Kentaurosmon,Unknown,Shoutmon X7F Superior Mode,Gigastick Lance,True
 95,Death Meramon,/digimons_images/Death_Meramon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,True
 96,Deltamon,/digimons_images/Deltamon.jpg,Champion,Virus,Unknown,Gazimon,Kimeramon,Unknown,Unknown,Triple Force | Skull Fang,True
-97,Delumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-98,Demon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+97,Delumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+98,Demon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 99,Devimon,/digimons_images/Devimon.jpg,Champion,Virus,Nightmare Soldiers,DemiDevimon,NeoDevimon | Myotismon | SkullSatamon | Ogremon | Kimeramon | Kabuterimon | BlueMeramon,IceDevimon,Unknown,Death Claw | Leather Wing | Hell Contract,True
-100,Diablomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+100,Diablomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 101,Dianamon,/digimons_images/Dianamon.jpg,Mega,Data,Deep Savers,Crescemon,GraceNovamon | Apollomon,Unknown,Unknown,Unknown,True
 102,Digitamamon,/digimons_images/Digitamamon.jpg,Ultimate,Data,Unknown,Ogremon,Devitamamon | Minervamon | Titamon,Unknown,Unknown,Enigma | Swing Egg,True
 103,Digmon,/digimons_images/Digmon.jpg,Armor,Vaccine / Free,Nature Spirits,Armadillomon,Unknown,Unknown,Unknown,Big Crack | Titan Drill,True
 104,Dinobeemon,/digimons_images/Dinobeemon.jpg,Ultimate,Virus / Free,Nature Spirits,Tanemon,GranKuwagamon | Imperialdramon Dragon Mode | TigerVespamon,Unknown,Unknown,Unknown,True
-105,Dinohumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+105,Dinohumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 106,Dobermon,/digimons_images/Dobermon.jpg,Champion,Vaccine,Nightmare Soldiers,Labramon,Cerberusmon,Unknown,Unknown,Unknown,True
 107,Dodomon,/digimons_images/Dodomon.jpg,Fresh,Free,Unknown,Unknown,Dorimon | Wanyamon,Unknown,Unknown,Chīsana Tetsu Tsubu,True
 108,Dokugumon,/digimons_images/Dokugumon.jpg,Champion,Virus,Unknown,KoDokugumon (In-Training),Arukenimon,Unknown,Unknown,Stinger Poration | ArachnoBatoto,True
 109,Dorimon,/digimons_images/Dorimon.jpg,In-Training,Free,Nature Spirits,Dodomon,Dorumon,Unknown,Unknown,San no Awa,True
 110,Dorugamon,/digimons_images/Dorugamon.jpg,Champion,Data,Nature Spirits,Dorumon,DoruGreymon,Unknown,Unknown,Power Metal,True
 111,Dorugoramon,/digimons_images/Dorugoramon.jpg,Mega,Data,Nature Spirits,DoruGreymon,Unknown,DexDorugoramon,Unknown,Brave Metal | DORU Din,True
-112,Doruguremon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+112,Doruguremon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 113,Dorumon,/digimons_images/Dorumon.jpg,Rookie,Data,Nature Spirits,Dorimon,Dorugamon | DexDorugamon | Reptiledramon,Unknown,Unknown,Unknown,True
 114,Dracomon,/digimons_images/Dracomon.jpg,Rookie,Data,Dragon's Roar,Unknown,Coredramon (Blue) | Coredramon (Green),Unknown,Shoutmon X7F Superior Mode,Tail Smash | G Shurunen,True
-115,Dracumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+115,Dracumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 116,Drimogemon,/digimons_images/Drimogemon.jpg,Champion,Data,Nature Spirits,Unknown,Digmon | Giromon | Mush-Upped MachLeomon | MachLeomon | Forest Zone | Code Crown | Abyss Truffle,Unknown,Unknown,Crusher Bone,True
-117,Duftmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-118,Duftmon  Leopard Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-119,Dukemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-120,Dukemon  Crimson Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+117,Duftmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+118,Duftmon  Leopard Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+119,Dukemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+120,Dukemon  Crimson Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 121,Duramon,/digimons_images/Duramon.jpg,Ultimate,Vaccine,Metal Empire,ZubaEagermon,Durandamon,Unknown,Unknown,Brinded | Grass-Slash,True
 122,Durandamon,/digimons_images/Durandamon.jpg,Mega,Vaccine,Metal Empire,Duramon,RagnaLoardmon | BryweLudramon,Unknown,Unknown,Zwanglänze,True
 123,Dynasmon,/digimons_images/Dynasmon.jpg,Mega,Data,Virus Busters,Silphymon,Unknown,Unknown,Unknown,Dragon's Roar | Digimon Frontier,True
 124,Ebemon,/digimons_images/Ebemon.jpg,Mega,Virus,Unknown,Vademon,Unknown,Unknown,Unknown,Brain Rupture | Planet Destroyer,True
 125,Elecmon,/digimons_images/Elecmon.jpg,Rookie,Data,Nature Spirits,Tsunomon,BlackGarurumon | Leomon | DarkTyrannomon,Elecmon (Violet),Unknown,Sparkling Thunder | Tai Atari | Thunder Knife,True
-126,Enbarrmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-127,Enbarrmon Craniummon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+126,Enbarrmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+127,Enbarrmon Craniummon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 128,Etemon,/digimons_images/Etemon.jpg,Ultimate,Virus,Unknown,Sukamon,Etemon (Chaos) | Dark Network | MetalEtemon | KingEtemon,Unknown,Unknown,Love Serenade | Dark Spirits | Monkick,True
 129,Examon,/digimons_images/Examon.jpg,Mega,Data,Dragon's Roar,Slayerdramon,Unknown,Unknown,Shoutmon X7F Superior Mode,Unknown,True
-130,Ex-Tyranomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+130,Ex-Tyranomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 131,Falcomon,/digimons_images/Falcomon.jpg,Rookie,Vaccine,Wind Guardians,Unknown,Diatrymon,Unknown,Unknown,Unknown,True
-132,Fantomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+132,Fantomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 133,Firamon,/digimons_images/Firamon.jpg,Champion,Vaccine,Dragon's Roar,Coronamon,Flaremon,Unknown,Unknown,Unknown,True
-134,Fladramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+134,Fladramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 135,Flaremon,/digimons_images/Flaremon.jpg,Ultimate,Vaccine,Dragon's Roar,Firamon,Apollomon,Unknown,Unknown,Guren Juuouha | Kurenai Shishi no Mai[2] | Seisei no Houkou,True
 136,Floramon,/digimons_images/Floramon.jpg,Rookie,Data,Wind Guardians,Tanemon,Kiwimon | Ninjamon | Vegiemon,Unknown,Unknown,Allergy Shower,True
 137,Flymon,/digimons_images/Flymon.jpg,Champion,Virus,Unknown,Kunemon,Okuwamon | JewelBeemon,Unknown,Unknown,Deadly Sting,True
 138,Fugamon,/digimons_images/Fugamon.jpg,Champion,Virus,Nightmare Soldiers,Goblimon,Unknown,Unknown,Unknown,Digimon World: Next Order,True
-139,Funbeemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+139,Funbeemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 140,Gabumon,/digimons_images/Gabumon.jpg,Rookie,Data,Nature Spirits,Tsunomon,Garurumon | Gabumon (Bond of Friendship),BlackGabumon,Shoutmon X7F Superior Mode,Petit Fire | Tsuno Kougeki | Hidden Knock,True
 141,Gabumon Bond of Friendship,/digimons_images/Gabumon Bond of Friendship.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-142,Gaioumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-143,Ganimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+142,Gaioumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+143,Ganimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 144,Gankoomon,/digimons_images/Gankoomon.jpg,Mega,Data,Virus Busters,Unknown,Unknown,Unknown,Unknown,Tekken Seisai[10] | Jishin! Kaminari! Kaji! Oyaji! | Chabudai Gaeshi,True
 145,Gaogamon,/digimons_images/Gaogamon.jpg,Champion,Data,Nature Spirits,Gaomon,MachGaogamon,Unknown,Unknown,Unknown,True
 146,Gaomon,/digimons_images/Gaomon.jpg,Rookie,Data,Nature Spirits,Wanyamon,Gaogamon | BlackGaogamon,Unknown,Unknown,Unknown,True
 147,Gargomon,/digimons_images/Gargomon.jpg,Champion,Vaccine,Nature Spirits,Terriermon,Rapidmon | Rapidmon (Armor),Unknown,Unknown,Gatling Arm | DumdumUpper,True
 148,Garudamon,/digimons_images/Garudamon.jpg,Ultimate,Vaccine,Wind Guardians,Birdramon,Phoenixmon | Ornismon,Unknown,Unknown,Shadow Wing | Crimson Claw | Kyoushū | Phoenix Fist | Garuda Punch,True
-149,Garummon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+149,Garummon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 150,Garurumon,/digimons_images/Garurumon.jpg,Champion,Vaccine,Nightmare Soldiers,Gabumon,WereGarurumon | ShadowWereGarurumon,Unknown,Shoutmon X7F Superior Mode,Fox Fire | Tai Atari | Freeze Fang,True
-151,Gawappamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+151,Gawappamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 152,Gazimon,/digimons_images/Gazimon.jpg,Rookie,Virus,Nightmare Soldiers,Unknown,Devidramon | Deltamon | BlackGarurumon | Leomon | Apemon,Unknown,Unknown,Paralyze Breath,True
 153,Gekomon,/digimons_images/Gekomon.jpg,Champion,Virus,Nature Spirits,Otamamon,ShogunGekomon | Whamon,Unknown,Unknown,Crash Symphony | Bero Kougeki,True
-154,Geo Greymon,/digimons_images/Placeholder.jpg,Champion,Vaccine,Dragon's Roar,Agumon (2006 anime),RizeGreymon,Unknown,Unknown,Unknown,True
-155,Gerbemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+154,Geo Greymon,/digimons_images/no image,Champion,Vaccine,Dragon's Roar,Agumon (2006 anime),RizeGreymon,Unknown,Unknown,Unknown,True
+155,Gerbemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 156,Geremon,/digimons_images/Geremon.jpg,Champion,Virus,Unknown,Unknown,Unknown,Unknown,Unknown,Hyper Smell | Unchi Nage | Iya~ na Shita | Renzoku Unchi Nage | Nume Tai Atari | Unchi,True
 157,Gigadramon,/digimons_images/Gigadramon.jpg,Ultimate,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Guilty Claw,True
 158,Ginryumon,/digimons_images/Ginryumon.jpg,Champion,Vaccine,Nature Spirits,Ryudamon,Hisyaryumon,Unknown,Unknown,Tekkoujin | Boujinha,True
 159,Gizamon,/digimons_images/Gizamon.jpg,Rookie,Virus,Deep Savers,Pagumon,Datamon | DarkTyrannomon,Unknown,Unknown,Spiral Edge,True
-160,Goburimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-161,Goddramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-162,Gold Numemon,/digimons_images/Placeholder.jpg,Champion,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Gold-DurianRush | Goldonara | Iya de Dekkai Shita | Gold Excrement,True
+160,Goburimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+161,Goddramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+162,Gold Numemon,/digimons_images/no image,Champion,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Gold-DurianRush | Goldonara | Iya de Dekkai Shita | Gold Excrement,True
 163,Golemon,/digimons_images/Golemon.jpg,Champion,Virus,Unknown,Gotsumon,PileVolcamon | Gogmamon,Unknown,Shoutmon X7F Superior Mode,Curse Crimson | Golem Punch,True
 164,Gomamon,/digimons_images/Gomamon.jpg,Rookie,Vaccine,Deep Savers,Bukamon,Ikkakumon | Gaogamon | Mojyamon,Unknown,Unknown,Marching Fishes | Surudoi Tsume | Sharp Edge | Sufer Dive | Bubble Barrier,True
-165,Gottsumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-166,Grace Novamon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Unknown,Apollomon,Unknown,Unknown,Unknown,Unknown,True
+165,Gottsumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+166,Grace Novamon,/digimons_images/no image,Mega,Vaccine,Unknown,Apollomon,Unknown,Unknown,Unknown,Unknown,True
 167,Grademon,/digimons_images/Grademon.jpg,Ultimate,Vaccine,Nature Spirits,Reptiledramon,Alphamon,Unknown,Shoutmon X7F Superior Mode,Unknown,True
-168,Gran Kuwagamon,/digimons_images/Placeholder.jpg,Mega,Virus / Free,Nature Spirits,Dinobeemon,MegaGranKuwagamon,GrandisKuwagamon,Unknown,Grand Death Screw | Zone Black Hole,True
-169,Grand Dracumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-170,Grand Locomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-171,Grappu Leomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-172,Great Gryzmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+168,Gran Kuwagamon,/digimons_images/no image,Mega,Virus / Free,Nature Spirits,Dinobeemon,MegaGranKuwagamon,GrandisKuwagamon,Unknown,Grand Death Screw | Zone Black Hole,True
+169,Grand Dracumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+170,Grand Locomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+171,Grappu Leomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+172,Great Gryzmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 173,Greymon,/digimons_images/Greymon.jpg,Champion,Vaccine,Nature Spirits,Agumon,MetalGreymon (Vaccine) | MetalGreymon (Virus) | SkullGreymon | RizeGreymon | Triceramon | Megadramon,Unknown,Unknown,Mega Flame | Great Antler | Great Horn Attack | Great Horn,True
-174,Griffomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+174,Griffomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 175,Groundramon,/digimons_images/Groundramon.jpg,Ultimate,Virus,Dragon's Roar,Coredramon (Green),Breakdramon,Unknown,Unknown,Scrapless Claw,True
-176,Growmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-177,Gryzmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+176,Growmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+177,Gryzmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 178,Guardromon,/digimons_images/Guardromon.jpg,Champion,Virus,Metal Empire,Kokuwamon,Andromon,Guardromon (Gold),Shoutmon X7F Superior Mode,Destruction Grenade,True
-179,Guardromon (Gold),/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+179,Guardromon (Gold),/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 180,Guilmon,/digimons_images/Guilmon.jpg,Rookie,Virus,Nature Spirits,Gigimon,Growlmon | BlackGrowlmon | Gallantmon | Bearmon,Unknown,Shoutmon X7F Superior Mode,Fireball | Kurenai-maru | Rock 'n' Roll Breaker | Fire Rock Breaker | Surudoi Tsume | Guil Shot | Kiai Tame | Kūchū Wild Upper,True
 181,Gundramon,/digimons_images/Gundramon.jpg,Mega,Virus,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
 182,Hackmon,/digimons_images/Hackmon.jpg,Rookie,Data,Metal Empire,Unknown,BaoHuckmon,Unknown,Unknown,Fif Slash | Baby Flame,True
 183,Hagurumon,/digimons_images/Hagurumon.jpg,Rookie,Virus,Metal Empire,Unknown,Guardromon | Mekanorimon | Guardromon (Gold),Unknown,Unknown,Darkness Gear | Makikomi | Kikai Attack,True
-184,Hangyomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+184,Hangyomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 185,Hawkmon,/digimons_images/Hawkmon.jpg,Rookie,Data / Free,Wind Guardians,Poromon,Aquilamon | Orcamon | Digi-Egg Digivolution Chart,Unknown,Unknown,Feather Slash | Beak Pecker | Loop the Hawk | Kuchibashi Attack,True
-186,Herakle Kabuterimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-187,Hi Andromon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Metal Empire,Andromon,Unknown,Unknown,Unknown,Digimon New Century | Spiral Sword,True
+186,Herakle Kabuterimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+187,Hi Andromon,/digimons_images/no image,Mega,Vaccine,Metal Empire,Andromon,Unknown,Unknown,Unknown,Digimon New Century | Spiral Sword,True
 188,Hippogriffomon,/digimons_images/Hippogriffomon.jpg,Ultimate,Data,Wind Guardians,Unimon,Gryphonmon | Zhuqiaomon,Unknown,Unknown,Unknown,True
 189,Hisyaryumon,/digimons_images/Hisyaryumon.jpg,Ultimate,Vaccine,Nature Spirits,DexDorugamon,Ouryumon,Unknown,Unknown,Seiryūjin | Jūouguruma,True
-190,Holsmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-191,Holy Angemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-192,Holydramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-193,Hououmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+190,Holsmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+191,Holy Angemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+192,Holydramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+193,Hououmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 194,Hyokomon,/digimons_images/Hyokomon.jpg,Rookie,Vaccine,Wind Guardians,Chicchimon,Buraimon,Unknown,Unknown,Karatakewari,True
-195,Hyougamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-196,Ice Devimon,/digimons_images/Placeholder.jpg,Champion,Virus,Nightmare Soldiers,Impmon,IceDevimon (Enhancement Absorbent) | Icemon | IceDevimon-Daipenmon Enhancement | Daipenmon | SkullSatamon,Unknown,Shoutmon X7F Superior Mode,Frost Claw | Icy Shower | Zero Freeze | Cold Blood | Razor Wing,True
+195,Hyougamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+196,Ice Devimon,/digimons_images/no image,Champion,Virus,Nightmare Soldiers,Impmon,IceDevimon (Enhancement Absorbent) | Icemon | IceDevimon-Daipenmon Enhancement | Daipenmon | SkullSatamon,Unknown,Shoutmon X7F Superior Mode,Frost Claw | Icy Shower | Zero Freeze | Cold Blood | Razor Wing,True
 197,Icemon,/digimons_images/Icemon.jpg,Champion,Data,Nature Spirits,Gotsumon,Meteormon | IceDevimon (Enhancement Absorbent) | IceDevimon,Unknown,Unknown,On the Rock | Digimon World 2,True
 198,Ikkakumon,/digimons_images/Ikkakumon.jpg,Champion,Vaccine,Deep Savers,Gomamon,Zudomon,Unknown,Unknown,Harpoon Vulcan | Digimon Digital Card Battle | Northern Lights | Digimon Rumble Arena 2,True
 199,Imperialdramon Dragon Mode,/digimons_images/Imperialdramon_Dragon_Mode.jpg,Mega,Vaccine / Free,Nature Spirits,Paildramon,Unknown,Imperialdramon Fighter Mode | Imperialdramon Dragon Mode (Black),Unknown,Mega Death | Splendor Blade,True
@@ -202,22 +202,22 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 201,Imperialdramon Paladin Mode,/digimons_images/Imperialdramon_Paladin_Mode.jpg,Mega,Vaccine / Free,Metal Empire,Unknown,Unknown,Unknown,Unknown,Omega Blade | Giga Death,True
 202,Impmon,/digimons_images/Impmon.jpg,Rookie,Virus,Nightmare Soldiers,Yaamon,IceDevimon | Meramon,Unknown,Shoutmon X7F Superior Mode,Summon | Night of Fire | Pillar of Fire | Dadadada Kick | Digimon All-Star Rumble | Night of Blizzard | Yami Fire,True
 203,Infermon,/digimons_images/Infermon.jpg,Ultimate,Virus / Free,Dark Area,Chrysalimon,Diaboromon,Unknown,Unknown,Hell's Grenade | Cocoon Attack | Virus Skater,True
-204,Insekimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+204,Insekimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 205,Jesmon,/digimons_images/Jesmon.jpg,Mega,Data,Virus Busters,SaviorHuckmon,Unknown,Jesmon GX,Unknown,Tekken Seibai | Schwertgeist | OSGenerics,True
 206,Jewelbeemon,/digimons_images/JewelBeemon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-207,Jumbo Gamemon,/digimons_images/Placeholder.jpg,Mega,Data,Deep Savers,Shawjamon,Unknown,Unknown,Unknown,Unknown,True
+207,Jumbo Gamemon,/digimons_images/no image,Mega,Data,Deep Savers,Shawjamon,Unknown,Unknown,Unknown,Unknown,True
 208,Junomon,/digimons_images/Junomon.png,Mega,Virus,Nightmare Soldiers,Unknown,Unknown,Junomon Hysteric Mode,Unknown,Grace Lance,True
 209,Junomon Hysteric Mode,/digimons_images/JunomonHisterycMode.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 210,Jupitermon,/digimons_images/Jupitermon.jpg,Mega,Vaccine,Wind Guardians,Aegiochusmon Holy,Unknown,Jupitermon Wrath Mode,Unknown,Unknown,True
-211,Jupitermon  Wrath Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+211,Jupitermon  Wrath Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 212,Justimon,/digimons_images/Justimon.jpg,Mega,Vaccine,Metal Empire,Unknown,Unknown,Unknown,Unknown,Accel Arm,True
-213,Jyureimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+213,Jyureimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 214,Kabuterimon,/digimons_images/Kabuterimon.jpg,Champion,Vaccine,Nature Spirits,Tentomon,MegaKabuterimon (Red) | MegaKabuterimon (Blue) | Kimeramon | Devimon | Kongoumon | TyrantKabuterimon,Unknown,Shoutmon X7F Superior Mode,Mega Blaster | Beetle Horn | Blink Thrust | Insect Plague | Danger Sting,True
-215,Kaiser Greymon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+215,Kaiser Greymon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 216,Kamemon,/digimons_images/Kamemon.jpg,Rookie,Data,Deep Savers,Unknown,Gwappamon,Unknown,Shoutmon X7F Superior Mode,Pointer Arrow | 'met Tackle | Kōra Gādo | Kōra Atakku,True
-217,Karatuki Numemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+217,Karatuki Numemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 218,Keramon,/digimons_images/Keramon.jpg,Rookie,Virus / Free,Dark Area,Tsumemon,Chrysalimon,Unknown,Unknown,Crazy Giggle,True
-219,King Etemon,/digimons_images/Placeholder.jpg,Mega,Virus,Nightmare Soldiers,Etemon,Unknown,Unknown,Unknown,Saru Shibai,True
+219,King Etemon,/digimons_images/no image,Mega,Virus,Nightmare Soldiers,Etemon,Unknown,Unknown,Unknown,Saru Shibai,True
 220,Kiwimon,/digimons_images/Kiwimon.jpg,Champion,Data,Wind Guardians,Floramon,Sinduramon | Blossomon | Sirenmon,Unknown,Unknown,Little Pecker | Nose Mattock,True
 221,Knightmon,/digimons_images/Knightmon.jpg,Ultimate,Data,Metal Empire,Gummymon,Crusadermon | Leopardmon,Unknown,Shoutmon X7F Superior Mode,Digimon Frontier,True
 222,Kokuwamon,/digimons_images/Kokuwamon.jpg,Rookie,Data,Metal Empire,Kapurimon,Guardromon | Thundermon,Unknown,Unknown,Scissor Arms Mini | Assemble Work | Elect-Elect | Inazuma Giri,True
@@ -228,80 +228,80 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 227,Kuwagamon,/digimons_images/Kuwagamon.jpg,Champion,Virus,Nature Spirits,Unknown,Megadramon | Kokatorimon | Okuwamon | MetalTyrannomon | DarkTyrannomon,Unknown,Unknown,Scissor Arms | Trap Scissors,True
 228,Kuzuhamon,/digimons_images/Kuzuhamon.jpg,Mega,Data,Nightmare Soldiers,Doumon,Unknown,Kuzuhamon Maid Mode,Unknown,Ura Izuna | Taizoukai Mandala[10],True
 229,Kyubimon,/digimons_images/Kyubimon.jpg,Champion,Data,Nightmare Soldiers,Renamon,Taomon,Unknown,Unknown,Koenryū | Onibidama | Zutsuki | Koshūgeki | Kodengeki | Amatsu-kitsune,True
-230,Lady Devimon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Unknown,BlackGatomon,SkullSatamon | MarineDevimon | Myotismon | MarineDevimon | Minervamon | Mastemon | Angewomon | Apocalymon | Vilemon | DemiDevimon | SkullSatamon | Myotismon | Puppetmon,Unknown,Shoutmon X7F Superior Mode,Poison | citation needed | Binta,True
+230,Lady Devimon,/digimons_images/no image,Ultimate,Virus,Unknown,BlackGatomon,SkullSatamon | MarineDevimon | Myotismon | MarineDevimon | Minervamon | Mastemon | Angewomon | Apocalymon | Vilemon | DemiDevimon | SkullSatamon | Myotismon | Puppetmon,Unknown,Shoutmon X7F Superior Mode,Poison | citation needed | Binta,True
 231,Lalamon,/digimons_images/Lalamon.jpg,Rookie,Data,Jungle Troopers,Budmon,Sunflowmon,Unknown,Unknown,Nuts Shoot | Lala Screw | Petit Tackle,True
 232,Lekismon,/digimons_images/Lekismon.jpg,Champion,Data,Deep Savers,Lunamon,Crescemon,Unknown,Unknown,Unknown,True
 233,Leomon,/digimons_images/Leomon.jpg,Champion,Vaccine,Nature Spirits,Elecmon,IceLeomon | GrapLeomon | BanchoLeomon,Unknown,Unknown,Jūouken | Shishiou-maru | Jūga-maru | Hasaigeri | Hyakujūken[22] | Jūouha | Shishi Jūhazan | citation needed,True
 234,Leviamon,/digimons_images/Leviamon.jpg,Mega,Virus,Deep Savers,MarineDevimon,Ogudomon | Lucemon Chaos Mode | Daemon | Belphemon Rage Mode | Barbamon | Beelzemon | Lilithmon,Unknown,Shoutmon X7F Superior Mode,Rostrum | Cauda | Anima | Duo Cauda,True
-235,Lighdramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+235,Lighdramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 236,Lilamon,/digimons_images/Lilamon.jpg,Ultimate,Data,Jungle Troopers,Sunflowmon,Rosemon | Lotosmon | Minervamon,Unknown,Shoutmon X7F Superior Mode,Un Deux Pollen,True
-237,Lilimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+237,Lilimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 238,Lilithmon,/digimons_images/Lilithmon.jpg,Mega,Virus,Nightmare Soldiers,Bastemon,Unknown,Unknown,Unknown,NazarNail,True
-239,Loader Leomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+239,Loader Leomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 240,Locomon,/digimons_images/Locomon.jpg,Ultimate,Data,Metal Empire,Unknown,GranLocomon,Unknown,Unknown,Unknown,True
 241,Lopmon,/digimons_images/Lopmon.jpg,Rookie,Data,Nature Spirits,Kokomon,Wendigomon | Turuiemon,Unknown,Shoutmon X7F Superior Mode,Petit Twister | Kūchū Blazing Ice | Guruguru Slap,True
-242,Lord Knightmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-243,Lotusmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+242,Lord Knightmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+243,Lotusmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 244,Lucemon,/digimons_images/Lucemon.jpg,Rookie,Vaccine,Virus Busters,Unknown,Lucemon Chaos Mode,Unknown,Unknown,Divine Feat,True
-245,Lucemon  Falldown Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-246,Lucemon  Satan Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+245,Lucemon  Falldown Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+246,Lucemon  Satan Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 247,Lunamon,/digimons_images/Lunamon.jpg,Rookie,Data,Deep Savers,Moonmon,Lekismon,Unknown,Unknown,Pico Darts,True
-248,Mach Gaogamon,/digimons_images/Placeholder.jpg,Ultimate,Data,Nature Spirits,Gaogamon,MirageGaogamon | ZeedGarurumon,Unknown,Unknown,Gaoga Tornado,True
-249,Magna Garurumon,/digimons_images/Placeholder.jpg,Hybrid,Data / Variable,Metal Empire,Spirits,Susanoomon | EmperorGreymon,MagnaGarurumon (SV),Unknown,Machine Gun Destroy | Starlight Velocity,True
-250,Magna Garurumon  Separation,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-251,Magna Kidmon,/digimons_images/Placeholder.jpg,Mega,Virus,Virus Busters,Unknown,Unknown,Unknown,Unknown,Unknown,True
+248,Mach Gaogamon,/digimons_images/no image,Ultimate,Data,Nature Spirits,Gaogamon,MirageGaogamon | ZeedGarurumon,Unknown,Unknown,Gaoga Tornado,True
+249,Magna Garurumon,/digimons_images/no image,Hybrid,Data / Variable,Metal Empire,Spirits,Susanoomon | EmperorGreymon,MagnaGarurumon (SV),Unknown,Machine Gun Destroy | Starlight Velocity,True
+250,Magna Garurumon  Separation,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+251,Magna Kidmon,/digimons_images/no image,Mega,Virus,Virus Busters,Unknown,Unknown,Unknown,Unknown,Unknown,True
 252,Magnamon,/digimons_images/Magnamon.jpg,Armor,Vaccine / Free,Metal Empire,Veemon,Unknown,Unknown,Unknown,Plasma Shoot | Extreme Jihad | Magnum Punch | Magnum Kick | Light Aura Barrier,True
 253,Mamemon,/digimons_images/Mamemon.jpg,Ultimate,Data,Metal Empire,Seadramon,TonosamaMamemon | PrinceMamemon | Machinedramon,MetalMamemon | BigMamemon | CatchMamemon,Unknown,Smiley Bomb | One-Two Rush | Buster Dive | Strike Upper,True
-254,Mammon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-255,Marin Angemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+254,Mammon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+255,Marin Angemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 256,Marsmon,/digimons_images/Marsmon.jpg,Mega,Vaccine,Virus Busters,GrapLeomon,Unknown,Unknown,Unknown,Mugenhadou,True
 257,Mastemon,/digimons_images/Mastemon.jpg,Mega,Vaccine,Unknown,Angewomon,Unknown,Unknown,Unknown,Chaos Degrade,True
-258,Master Blimpmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-259,Matadrmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-260,Mechanorimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-261,Medieval Dukemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-262,Mega Seadramon,/digimons_images/Placeholder.jpg,Ultimate,Data,Deep Savers,SnowAgumon,MetalSeadramon,Unknown,Unknown,Maelstrom | Dramon Attack | Ice Arrow | Stinger Surprise | Ice Reflect | Shimetsukeru,True
+258,Master Blimpmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+259,Matadrmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+260,Mechanorimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+261,Medieval Dukemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+262,Mega Seadramon,/digimons_images/no image,Ultimate,Data,Deep Savers,SnowAgumon,MetalSeadramon,Unknown,Unknown,Maelstrom | Dramon Attack | Ice Arrow | Stinger Surprise | Ice Reflect | Shimetsukeru,True
 263,Megadramon,/digimons_images/Megadramon.jpg,Ultimate,Virus,Metal Empire,Monodramon,Ghoulmon | Cherrymon | Machinedramon | WarGreymon | Dinorexmon,Unknown,Unknown,Genocide Attack | Ultimate Slicer | Mega Death Scythe,True
-264,Megalo Growmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+264,Megalo Growmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 265,Megidramon,/digimons_images/Megidramon.jpg,Mega,Virus,Nightmare Soldiers,WarGrowlmon,Unknown,Unknown,Unknown,Hell Howling | MegiddoFlame,True
 266,Meramon,/digimons_images/Meramon.jpg,Champion,Data,Nightmare Soldiers,DemiMeramon,BlueMeramon | SkullMeramon | FusedAncientVolcanomon | AncientVolcanomon,Unknown,Unknown,Burning Fist | Guren no Honoo | Magma Bomb,True
 267,Mercurymon,/digimons_images/Mercurymon.jpg,Hybrid,Variable,Metal Empire,H Spirit of Steel,ShadowSeraphimon | Seraphimon,Unknown,Unknown,Generous Mirror | Offset Reflector,True
 268,Mervamon,/digimons_images/Mervamon.jpg,Mega,Virus,Nightmare Soldiers,Unknown,Unknown,Unknown,Shoutmon X7F Superior Mode,Hebi Panchi,True
-269,Metal Etemon,/digimons_images/Placeholder.jpg,Mega,Virus,Nature Spirits,Etemon,Unknown,KingEtemon,Unknown,Mega Punch | Hekoki Attack | Number One Punch | Full Metal Hip Attack | Heavy Mon-kick | Dark Recital | Love Serenade,True
-270,Metal Garurumon,/digimons_images/Placeholder.jpg,Mega,Data,Metal Empire,WereGarurumon,Omnimon | WarGreymon | Omnimon X | WarGreymon | Omnimon Zwart | WarGreymon,Unknown,Shoutmon X7F Superior Mode,CocytusBreath | Metal Fang | Blizzard Attack | Giga Destruction | Metal Scratch,True
-271,Metal Greymon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Dragon's Roar,Greymon (2010 anime),ZekeGreymon,Unknown,Unknown,Giga Destroyer,True
-272,Metal Mamemon,/digimons_images/Placeholder.jpg,Ultimate,Data,Metal Empire,Unknown,PrinceMamemon,Unknown,Unknown,Energy Bomb | Magnet Beam,True
-273,Metal Seadramon,/digimons_images/Placeholder.jpg,Mega,Data,Deep Savers,MegaSeadramon,Unknown,GigaSeadramon,Unknown,Ultimate Stream | Hell Squeeze | Poseidon Divide | Shimetsuke,True
-274,Metal Tyranomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-275,Millenniumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+269,Metal Etemon,/digimons_images/no image,Mega,Virus,Nature Spirits,Etemon,Unknown,KingEtemon,Unknown,Mega Punch | Hekoki Attack | Number One Punch | Full Metal Hip Attack | Heavy Mon-kick | Dark Recital | Love Serenade,True
+270,Metal Garurumon,/digimons_images/no image,Mega,Data,Metal Empire,WereGarurumon,Omnimon | WarGreymon | Omnimon X | WarGreymon | Omnimon Zwart | WarGreymon,Unknown,Shoutmon X7F Superior Mode,CocytusBreath | Metal Fang | Blizzard Attack | Giga Destruction | Metal Scratch,True
+271,Metal Greymon,/digimons_images/no image,Ultimate,Virus,Dragon's Roar,Greymon (2010 anime),ZekeGreymon,Unknown,Unknown,Giga Destroyer,True
+272,Metal Mamemon,/digimons_images/no image,Ultimate,Data,Metal Empire,Unknown,PrinceMamemon,Unknown,Unknown,Energy Bomb | Magnet Beam,True
+273,Metal Seadramon,/digimons_images/no image,Mega,Data,Deep Savers,MegaSeadramon,Unknown,GigaSeadramon,Unknown,Ultimate Stream | Hell Squeeze | Poseidon Divide | Shimetsuke,True
+274,Metal Tyranomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+275,Millenniumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 276,Minervamon,/digimons_images/Minervamon.jpg,Mega,Virus,Nightmare Soldiers,Digitamamon,Unknown,Mervamon,Unknown,Unknown,True
-277,Minotaurmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-278,Mirage Gaogamon,/digimons_images/Placeholder.jpg,Mega,Data,Nature Spirits,MachGaogamon,Unknown,MirageGaogamon Burst Mode,Unknown,Unknown,True
-279,Mirage Gaogamon  Burst Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+277,Minotaurmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+278,Mirage Gaogamon,/digimons_images/no image,Mega,Data,Nature Spirits,MachGaogamon,Unknown,MirageGaogamon Burst Mode,Unknown,Unknown,True
+279,Mirage Gaogamon  Burst Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 280,Mistymon,/digimons_images/Mistymon.jpg,Ultimate,Virus,Virus Busters,Wizardmon,Dynasmon | MedievalGallantmon,Unknown,Unknown,Unknown,True
-281,Mochimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+281,Mochimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 282,Mojyamon,/digimons_images/Mojyamon.jpg,Champion,Vaccine,Nature Spirits,Gomamon,Piximon,Unknown,Unknown,Icicle Rod | Hone Hone Boomerang,True
 283,Monochromon,/digimons_images/Monochromon.jpg,Champion,Data,Nature Spirits,Gotsumon,Megadramon | Vermilimon | Triceramon,Unknown,Unknown,Volcano Strike | Tai Atari | Grand Fire | Gaudy Tusk | Mega Flame,True
 284,Monodramon,/digimons_images/Monodramon.jpg,Rookie,Vaccine,Nature Spirits,Hopmon,Strikedramon | Airdramon,Unknown,Shoutmon X7F Superior Mode,Crack Bite | Zutsuki Kougeki,True
 285,Monzaemon,/digimons_images/Monzaemon.jpg,Ultimate,Vaccine,Metal Empire,Gummymon,GigaWaruMonzaemon | WaruMonzaemon | Lilithmon | ShinMonzaemon,Unknown,Unknown,Lovely Attack | Ai no Houkou | Silence Hug | Bunbun Punch,True
 286,Muchomon,/digimons_images/Muchomon.jpg,Rookie,Data,Deep Savers,Tokomon,Sinduramon | Kokatorimon,Unknown,Unknown,Mugen Binta | Ardent Flair | Kauntā Binta | Kuchibashi Attack,True
-287,Mugendramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+287,Mugendramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 288,Mummymon,/digimons_images/Mummymon.jpg,Ultimate,Virus,Unknown,Unknown,Beelzemon | Matadormon | Pharaohmon,Unknown,Unknown,Unknown,True
-289,Mushmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+289,Mushmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 290,Musyamon,/digimons_images/Musyamon.jpg,Champion,Virus,Nightmare Soldiers,Kotemon,Asuramon,Unknown,Unknown,Kirisute Gomen | Shiratori-maru,True
 291,Nanimon,/digimons_images/Nanimon.jpg,Champion,Virus,Unknown,Unknown,Unknown,PlatinumSukamon,Unknown,OYAJIPunch | Unchi Kougeki | Unchi | Dead Word | Unchi Danku,True
-292,Nanomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+292,Nanomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 293,Nefertimon,/digimons_images/Nefertimon.jpg,Armor,Vaccine / Free,Virus Busters,Gatomon,Angewomon,Unknown,Unknown,NileJewelry | Curse of Queen | Paw of Queen,True
 294,Neptunemon,/digimons_images/Neptunemon.jpg,Mega,Vaccine,Deep Savers,Whamon (Ultimate),Unknown,Unknown,Unknown,Vortex Penetrate | Wave of Depth,True
 295,Numemon,/digimons_images/Numemon.jpg,Champion,Virus,Unknown,Agumon,Monzaemon | BlackKingNumemon,KyodaiNumemon | Sukamon | ShellNumemon | GoldNumemon,Unknown,Unchi | Unchi Nage | Chou Akushū Funsha | Enga Chou Kick | Renzoku Unchi Nage | Nume Tai Atari | Iya~ na Shita | Choukyori Unchi Nage,True
 296,Nyaromon,/digimons_images/Nyaromon.jpg,In-Training,Free,Nature Spirits,YukimiBotamon,Salamon,Unknown,Unknown,Fox Tail | Awa,True
-297,Octmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-298,Ofanimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+297,Octmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+298,Ofanimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 299,Okuwamon,/digimons_images/Okuwamon.jpg,Ultimate,Virus,Nature Spirits,Kuwagamon,GranKuwagamon,Unknown,Unknown,Scissor Arms Ω | Hakai no Shoudou,True
-300,Omega Shoutmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-301,Omegamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-302,Omegamon Zwart,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-303,Orgemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+300,Omega Shoutmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+301,Omegamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+302,Omegamon Zwart,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+303,Orgemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 304,Orochimon,/digimons_images/Orochimon.jpg,Ultimate,Virus,Nature Spirits,Eyesmon,MadLeomon (Orochimode) | MadLeomon | Ebonwumon | Nidhoggmon,Unknown,Unknown,Sake Breath,True
 305,Otamamon,/digimons_images/Otamamon.jpg,Rookie,Virus,Nature Spirits,Unknown,Gekomon,Unknown,Unknown,Lullaby Bubble | Child Claw | Tai Atari,True
 306,Ouryumon,/digimons_images/Ouryumon.jpg,Mega,Vaccine,Nature Spirits,Hisyaryumon,Alphamon Ouryuken | Alphamon,Unknown,Unknown,Eiseiryūoujin | Ougai,True
@@ -309,143 +309,143 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 308,Paildramon,/digimons_images/Paildramon.jpg,Ultimate,Data / Free,Nature Spirits,ExVeemon,Imperialdramon Dragon Mode | Imperialdramon Fighter Mode,Unknown,Unknown,Esgrima | Elemental Bolt,True
 309,Palmon,/digimons_images/Palmon.jpg,Rookie,Data,Nature Spirits,Tanemon,Togemon | Woodmon | Sunflowmon,Unknown,Shoutmon X7F Superior Mode,Root Stretch | Sleep Spore | Nioi Kougeki | Kusai Nioi | Totemo Kusai Nioi,True
 310,Pandamon,/digimons_images/Pandamon.jpg,Ultimate,Data,Unknown,Grizzlymon,BanchoLeomon | GrapLeomon,Unknown,Unknown,Sasa Punch | Shoudan | Unnanshou,True
-311,Panjyamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+311,Panjyamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 312,Parrotmon,/digimons_images/Parrotmon.jpg,Ultimate,Vaccine,Wind Guardians,Tokomon,Eaglemon,Unknown,Unknown,citation needed | MjölnirThunder,True
 313,Patamon,/digimons_images/Patamon.jpg,Rookie,Data / Free,Nature Spirits,Tokomon,Angemon | Pegasusmon | Digi-Egg Digivolution Chart,Unknown,Shoutmon X7F Superior Mode,Air Shot | Air Gust | Tai Atari | Pretty Rush | Geigeki Air Shot | Hane Binta | Thousand Wing | Tai Atari Bomb | Sparking Air Shot,True
 314,Peckmon,/digimons_images/Peckmon.jpg,Champion,Vaccine,Wind Guardians,Falcomon (2006 anime),Crowmon (2006 anime),Unknown,Unknown,Thousand Beak | Kunai Bane | Meakeri | Tsuyoi Maekeri,True
-315,Pegasmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-316,Penmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+315,Pegasmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+316,Penmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 317,Pharaohmon,/digimons_images/Pharaohmon.jpg,Mega,Virus,Nightmare Soldiers,Mummymon,Unknown,Anubismon,Unknown,Unknown,True
-318,Piccolomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-319,Pico Devimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-320,Piemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-321,Pile Volcamon,/digimons_images/Placeholder.jpg,Mega,Data,Metal Empire,Volcamon,Unknown,Unknown,Unknown,Unknown,True
-322,Pinochimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-323,Piyomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-324,Platinum Numemon,/digimons_images/Placeholder.jpg,Mega,Virus,Metal Empire,BlackKingNumemon,Unknown,Unknown,Unknown,Platinum Excrement | Excrement | Sugoku Iya de Dekkai Shita,True
-325,Platinum Scumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+318,Piccolomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+319,Pico Devimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+320,Piemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+321,Pile Volcamon,/digimons_images/no image,Mega,Data,Metal Empire,Volcamon,Unknown,Unknown,Unknown,Unknown,True
+322,Pinochimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+323,Piyomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+324,Platinum Numemon,/digimons_images/no image,Mega,Virus,Metal Empire,BlackKingNumemon,Unknown,Unknown,Unknown,Platinum Excrement | Excrement | Sugoku Iya de Dekkai Shita,True
+325,Platinum Scumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 326,Plesiomon,/digimons_images/Plesiomon.jpg,Mega,Data,Deep Savers,Zudomon,Unknown,Aegisdramon,Unknown,Unknown,True
-327,Plotmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+327,Plotmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 328,Plutomon,/digimons_images/Plutomon.jpg,Mega,Virus,Unknown,Cerberusmon Werewolf Mode,Plutomon (Fusion) | Master,Unknown,Unknown,Chaos Rights,True
 329,Poyomon,/digimons_images/Poyomon.jpg,Fresh,Data / Free,Deep Savers,Unknown,Tokomon | Frigimon | Brachiomon | Bukamon | Tokomon X,Unknown,Unknown,Kyouryoku San no Awa | San no Awa | Awa,True
-330,Prince Mamemon,/digimons_images/Placeholder.jpg,Mega,Data,Virus Busters,MetalMamemon,Unknown,Unknown,Unknown,Digimon World Dawn and Dusk,True
-331,Pukamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+330,Prince Mamemon,/digimons_images/no image,Mega,Data,Virus Busters,MetalMamemon,Unknown,Unknown,Unknown,Digimon World Dawn and Dusk,True
+331,Pukamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 332,Pukumon,/digimons_images/Pukumon.jpg,Mega,Virus,Deep Savers,ShogunGekomon,Unknown,Unknown,Unknown,Unknown,True
-333,Pumpmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+333,Pumpmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 334,Punimon,/digimons_images/Punimon.jpg,Fresh,Data / Free,Unknown,Unknown,Tsunomon | Salamon,Unknown,Unknown,San no Awa | Awa,True
-335,Pyocomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+335,Pyocomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 336,Ranamon,/digimons_images/Ranamon.jpg,Hybrid,Vaccine / Variable,Deep Savers,H Spirit of Water,Unknown,Unknown,Unknown,Rain Stream | Jealousy Rain,True
-337,Rapidmon Armor,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-338,Rapidmon Perfect,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-339,Raptordramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+337,Rapidmon Armor,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+338,Rapidmon Perfect,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+339,Raptordramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 340,Raremon,/digimons_images/Raremon.jpg,Champion,Virus,Nightmare Soldiers,Pagumon,RareRaremon,Unknown,Unknown,Hedoro | Kusai Gas,True
-341,Ravmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-342,Ravmon  Burst Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+341,Ravmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+342,Ravmon  Burst Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 343,Renamon,/digimons_images/Renamon.jpg,Rookie,Data,Nightmare Soldiers,Viximon,Kyubimon | Youkomon,Unknown,Unknown,Koyousetsu | Kohenkyo | Touhakken | Shouda | Souzan | Kokaishū | Kosengeki | Korenkyaku,True
 344,Reppamon,/digimons_images/Reppamon.jpg,Champion,Vaccine,Virus Busters,Kudamon (2006 anime),Chirinmon,Unknown,Unknown,Kurukuru Rekkūzan | Jūga Rangeki | Shinkū Kamaitachi,True
-345,Revolmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-346,Rize Greymon,/digimons_images/Placeholder.jpg,Ultimate,Vaccine,Dragon's Roar,GeoGreymon,ShineGreymon | VictoryGreymon | Gaiomon,Unknown,Unknown,Unknown,True
+345,Revolmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+346,Rize Greymon,/digimons_images/no image,Ultimate,Vaccine,Dragon's Roar,GeoGreymon,ShineGreymon | VictoryGreymon | Gaiomon,Unknown,Unknown,Unknown,True
 347,Rosemon,/digimons_images/Rosemon.jpg,Mega,Data,Wind Guardians,Lillymon,Omnimon Merciful Mode | Omnimon | Vikemon | HerculesKabuterimon | Hououmon | Seraphimon | Magnadramon,Rosemon Burst Mode,Unknown,Thorn Whip | Roses Rapier | Thorn Shot,True
-348,Rosemon  Burst Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-349,Rust Tyranomon,/digimons_images/Placeholder.jpg,Mega,Virus,Metal Empire,MetalTyrannomon,Unknown,Unknown,Unknown,Terror's Cluster,True
+348,Rosemon  Burst Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+349,Rust Tyranomon,/digimons_images/no image,Mega,Virus,Metal Empire,MetalTyrannomon,Unknown,Unknown,Unknown,Terror's Cluster,True
 350,Ryudamon,/digimons_images/Ryudamon.jpg,Rookie,Vaccine,Nature Spirits,Unknown,Ginryumon | DexDorugamon,Unknown,Unknown,Kabutogaeshi | Iaijin,True
-351,Saber Leomon,/digimons_images/Placeholder.jpg,Mega,Data,Nature Spirits,GrapLeomon,Unknown,Dinotigermon,Unknown,Nail Crusher,True
-352,Saint Galgomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+351,Saber Leomon,/digimons_images/no image,Mega,Data,Nature Spirits,GrapLeomon,Unknown,Dinotigermon,Unknown,Nail Crusher,True
+352,Saint Galgomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 353,Sakuyamon,/digimons_images/Sakuyamon.jpg,Mega,Data,Nightmare Soldiers,Taomon,Unknown,Kuzuhamon | Sakuyamon Maid Mode,Unknown,Spirit Strike[6] | Kongoukai Mandara | Jouenkobu | Raishuukyaku | Kofūsatsu | Koenkyaku | Yougetsushū | Kassengeki | Kuda-gitsune,True
 354,Sangloupmon,/digimons_images/Sangloupmon.jpg,Champion,Virus,Dark Area,Dracmon,Matadormon | Myotismon,Unknown,Unknown,Unknown,True
-355,Savior Hackmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-356,Scumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+355,Savior Hackmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+356,Scumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 357,Seadramon,/digimons_images/Seadramon.jpg,Champion,Data,Deep Savers,Betamon,MegaSeadramon | Mamemon | Whamon | WaruSeadramon | SkullSeadramon,Unknown,Unknown,Ice Arrow | Water Breath | Chill Brains | Shimetsukeru,True
 358,Seraphimon,/digimons_images/Seraphimon.jpg,Mega,Vaccine,Wind Guardians,MagnaAngemon,Omnimon Merciful Mode | Omnimon | Vikemon | Rosemon | HerculesKabuterimon | Hououmon | Magnadramon,ShadowSeraphimon | Daemon,Unknown,Seven Heavens | Divine Breaker | Ascension Hallow | Final Heal | Chokkagata Heaven's Kick,True
 359,Shakkoumon,/digimons_images/Shakkoumon.jpg,Ultimate,Data / Free,Unknown,Ankylomon,Vikemon | SlashAngemon,Unknown,Unknown,Aramitama | Nigimitama | Sakimitama,True
-360,Shakomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-361,Shamamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+360,Shakomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+361,Shamamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 362,Sharkmon,/digimons_images/Sharkmon.jpg,Ultimate,Virus,Unknown,Unknown,Unknown,Unknown,Unknown,Issei Hōgeki,True
-363,Shawujinmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+363,Shawujinmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 364,Shellmon,/digimons_images/Shellmon.jpg,Champion,Data,Deep Savers,Syakomon,Mermaimon,Unknown,Unknown,Hydro Pressure | Tai Atari | Spin Shelter,True
-365,Shine Greymon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Dragon's Roar,RizeGreymon,Unknown,ShineGreymon Burst Mode | ShineGreymon Ruin Mode,Unknown,Unknown,True
-366,Shine Greymon  Burst Mode,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+365,Shine Greymon,/digimons_images/no image,Mega,Vaccine,Dragon's Roar,RizeGreymon,Unknown,ShineGreymon Burst Mode | ShineGreymon Ruin Mode,Unknown,Unknown,True
+366,Shine Greymon  Burst Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 367,Shoutmon,/digimons_images/Shoutmon.jpg,Rookie,Data / Free,Nature Spirits,Unknown,Shoutmon (King Version),Unknown,Shoutmon X7F Superior Mode,Rokku Damashī | Soul Crusher | Rowdy Rocker,True
 368,Shurimon,/digimons_images/Shurimon.jpg,Armor,Data / Free,Wind Guardians,Hawkmon,Unknown,Unknown,Unknown,Kusanagi | Momiji Oroshi | Nouten Sakaotoshi | Konoha Kakure | Tendril Jump,True
 369,Silphymon,/digimons_images/Silphymon.jpg,Ultimate,Data / Free,Wind Guardians,Aquilamon,Dynasmon | Valkyrimon | Varodurumon | Sinduramon | Phoenixmon,Unknown,Unknown,Top Gun | Dual Sonic,True
 370,Sirenmon,/digimons_images/Sirenmon.jpg,Ultimate,Data,Deep Savers,Kiwimon,Unknown,Unknown,Unknown,Dai'ikkyoku (Polyphony) | Dainikyoku (Aria) | Daisankyoku (Canon),True
-371,Skull Baluchimon,/digimons_images/Placeholder.jpg,Ultimate,Data,Nightmare Soldiers,Baluchimon,Unknown,Unknown,Unknown,Unknown,True
-372,Skull Baluchimon Titamon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-373,Skull Greymon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Nightmare Soldiers,Greymon,BlackWarGreymon | Machinedramon,Unknown,Unknown,Ground Zero | Curse Breath,True
-374,Skull Mammon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-375,Skull Satamon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Nightmare Soldiers,Devimon,Beelzemon | Apocalymon | DemiDevimon | Vilemon | LadyDevimon | Myotismon | Puppetmon | Murmukusmon,Unknown,Unknown,Unknown,True
+371,Skull Baluchimon,/digimons_images/no image,Ultimate,Data,Nightmare Soldiers,Baluchimon,Unknown,Unknown,Unknown,Unknown,True
+372,Skull Baluchimon Titamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+373,Skull Greymon,/digimons_images/no image,Ultimate,Virus,Nightmare Soldiers,Greymon,BlackWarGreymon | Machinedramon,Unknown,Unknown,Ground Zero | Curse Breath,True
+374,Skull Mammon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+375,Skull Satamon,/digimons_images/no image,Ultimate,Virus,Nightmare Soldiers,Devimon,Beelzemon | Apocalymon | DemiDevimon | Vilemon | LadyDevimon | Myotismon | Puppetmon | Murmukusmon,Unknown,Unknown,Unknown,True
 376,Skullseadramon,/digimons_images/SkullSeadramon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-377,Slash Angemon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Virus Busters,Shakkoumon,Unknown,Unknown,Unknown,Holy Espada | Heaven's Ripper,True
+377,Slash Angemon,/digimons_images/no image,Mega,Vaccine,Virus Busters,Shakkoumon,Unknown,Unknown,Unknown,Holy Espada | Heaven's Ripper,True
 378,Slayerdramon,/digimons_images/Slayerdramon.jpg,Mega,Vaccine,Dragon's Roar,Wingdramon,Examon | Breakdramon,Unknown,Unknown,Tenryūzanha | Shouryūzanpa | Kouryūzanba,True
-379,Sleipmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+379,Sleipmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 380,Snimon,/digimons_images/Snimon.jpg,Champion,Vaccine,Unknown,Unknown,Unknown,Unknown,Unknown,Shadow Sickle | Tai Atari,True
-381,Snow Goburimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+381,Snow Goburimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 382,Solarmon,/digimons_images/Solarmon.jpg,Rookie,Vaccine,Metal Empire,Unknown,Clockmon | Guardromon (Gold) | Meramon,Unknown,Unknown,Shiny Ring | SolCalor | Kikai Attack,True
-383,Sorcerimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+383,Sorcerimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 384,Starmon,/digimons_images/Starmon.jpg,Champion,Data,Nature Spirits,Unknown,SuperStarmon,Unknown,Unknown,Meteor Squall | Saiminjutsu,True
 385,Stingmon,/digimons_images/Stingmon.jpg,Champion,Virus / Free,Nature Spirits,Wormmon,Paildramon | ExVeemon | Dinobeemon | ExVeemon | JewelBeemon | Imperialdramon Dragon Mode | Veemon,Unknown,Shoutmon X7F Superior Mode,Spiking Finish | Hell Squeeze | Moon Moon Shooter,True
 386,Strikedramon,/digimons_images/Strikedramon.jpg,Champion,Vaccine,Nature Spirits,Monodramon,Cyberdramon,Unknown,Unknown,Unknown,True
 387,Submarimon,/digimons_images/Submarimon.jpg,Armor,Vaccine / Free,Deep Savers,Armadillomon,Unknown,Unknown,Unknown,Oxygen Homing | Digimon ReArise | Aqua Vulcan,True
 388,Sunflowmon,/digimons_images/Sunflowmon.jpg,Champion,Data,Jungle Troopers,Lalamon,Lilamon,Unknown,Unknown,Unknown,True
-389,Super Starmon,/digimons_images/Placeholder.jpg,Ultimate,Data,Nature Spirits,Starmon,Justimon (Blitz Arm),Unknown,Unknown,Halley Squall | Galactica Eyes,True
-390,Susanoomon,/digimons_images/Susanoomon.jpg,Mega,Vaccine / Free,,Spirits of the Ten Legendary Warriors,Unknown,Unknown,Unknown,Ama-no-Habakiri | Yakusa-no-Ikadzuchi,True
-391,Tailmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+389,Super Starmon,/digimons_images/no image,Ultimate,Data,Nature Spirits,Starmon,Justimon (Blitz Arm),Unknown,Unknown,Halley Squall | Galactica Eyes,True
+390,Susanoomon,/digimons_images/Susanoomon.jpg,Mega,Vaccine / Free,None,Spirits of the Ten Legendary Warriors,Unknown,Unknown,Unknown,Ama-no-Habakiri | Yakusa-no-Ikadzuchi,True
+391,Tailmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 392,Tanemon,/digimons_images/Tanemon.jpg,In-Training,Data / Free,Jungle Troopers,Yuramon,Palmon | Floramon | Dinobeemon | Lalamon,Unknown,Shoutmon X7F Superior Mode,Awa | Nenchakusei no Awa | San no Awa | Rush | Bubble Attack | Large Bubbles | Support Request | Dempsey | Ivy Ground,True
 393,Tankdramon,/digimons_images/Tankdramon.jpg,Ultimate,Virus,Metal Empire,Sealsdramon,Darkdramon,Unknown,Unknown,Unknown,True
 394,Tankmon,/digimons_images/Tankmon.jpg,Champion,Data,Metal Empire,Unknown,Knightmon,Unknown,Unknown,Machine Gun Arm | Hell Drive | Sub Vulcan,True
 395,Taomon,/digimons_images/Taomon.jpg,Ultimate,Data,Nightmare Soldiers,Kyubimon,Sakuyamon | Kuzuhamon | Karatenmon,Unknown,Unknown,Bonhitsusen | Kofūsatsu | Rajas | On | Ippitsu | Issen,True
 396,Tentomon,/digimons_images/Tentomon.jpg,Rookie,Vaccine,Nature Spirits,Motimon,Kabuterimon,Unknown,Unknown,Petit Thunder | Katai Tsume | Tai Atari | Twice Arm,True
 397,Terriermon,/digimons_images/Terriermon.jpg,Rookie,Vaccine,Nature Spirits,Gummymon,Gargomon | Rapidmon (Armor) | Digi-Egg of Destiny,Unknown,Shoutmon X7F Superior Mode,Petit Twister | Blazing Fire,True
-398,Tiger Vespamon,/digimons_images/Placeholder.jpg,Mega,Virus,Metal Empire,CannonBeemon,Unknown,Unknown,Unknown,Mach Stinger V,True
+398,Tiger Vespamon,/digimons_images/no image,Mega,Virus,Metal Empire,CannonBeemon,Unknown,Unknown,Unknown,Mach Stinger V,True
 399,Titamon,/digimons_images/Titamon.jpg,Mega,Virus,Unknown,Digitamamon,Unknown,Unknown,Unknown,Konpaku Shingeki[4] | Genba Mukon | Koou Meijin,True
 400,Togemon,/digimons_images/Togemon.jpg,Champion,Data,Nature Spirits,Palmon,Lillymon | Ponchomon,Unknown,Unknown,Chikuchiku Banban | Mach Jab | Coconuts Punch | Coconut Counter,True
 401,Tokomon,/digimons_images/Tokomon.jpg,In-Training,Data / Free,Wind Guardians,Poyomon,Patamon | Muchomon | Kokatorimon | Parrotmon,Unknown,Unknown,Kamitsuki | Awa | San no Awa,True
-402,Tonosama Gekomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+402,Tonosama Gekomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 403,Toy Agumon,/digimons_images/ToyAgumon.jpg,Rookie,Vaccine,Metal Empire,Unknown,Unknown,Unknown,Unknown,Baby Flame | Mullion Punch | Kikai Attack,True
 404,Triceramon,/digimons_images/Triceramon.jpg,Ultimate,Data,Nature Spirits,Tyrannomon,Azulongmon | Dinorexmon | WarGreymon | Machinedramon,Unknown,Unknown,Digimon Adventure V-Tamer 01 | Tai Atari | Fire Breath,True
 405,Tsumemon,/digimons_images/Tsumemon.jpg,In-Training,Free,Nightmare Soldiers,Kuramon,Keramon | Zanbamon | DemiDevimon,Unknown,Unknown,Awa,True
-406,Tuchidarumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-407,Tunomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+406,Tuchidarumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+407,Tunomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 408,Turuiemon,/digimons_images/Turuiemon.jpg,Champion,Data,Nature Spirits,Lopmon,Antylamon (Good),Unknown,Unknown,Gantoretto | Ninjinken,True
 409,Tuskmon,/digimons_images/Tuskmon.jpg,Champion,Virus,Unknown,Agumon,Megadramon | MetalGreymon (Vaccine) | Triceramon,Unknown,Unknown,Panzer Knuckle,True
-410,Tyilinmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-411,Tyranomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-412,Tyrant Kabuterimon,/digimons_images/Placeholder.jpg,Mega,Virus,Nature Spirits,Kabuterimon,Unknown,Unknown,Unknown,Unknown,True
-413,Tyumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-414,Ulforce Veedramon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Wind Guardians,AeroVeedramon,UlforceVeedramon Future Mode,Unknown,Unknown,Shining V Force | Ulforce Saber | Tense-greatShield,True
-415,Ultimate Brachiomon,/digimons_images/Placeholder.jpg,Mega,Data,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
-416,Undead Plutomon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+410,Tyilinmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+411,Tyranomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+412,Tyrant Kabuterimon,/digimons_images/no image,Mega,Virus,Nature Spirits,Kabuterimon,Unknown,Unknown,Unknown,Unknown,True
+413,Tyumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+414,Ulforce Veedramon,/digimons_images/no image,Mega,Vaccine,Wind Guardians,AeroVeedramon,UlforceVeedramon Future Mode,Unknown,Unknown,Shining V Force | Ulforce Saber | Tense-greatShield,True
+415,Ultimate Brachiomon,/digimons_images/no image,Mega,Data,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
+416,Undead Plutomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 417,Unimon,/digimons_images/Unimon.jpg,Champion,Vaccine,Wind Guardians,Cutemon,Hippogriffomon,Unknown,Unknown,Holy Shot | 'corn Thrust | Spread Neigh,True
 418,Vademon,/digimons_images/Vademon.jpg,Ultimate,Virus,Unknown,Vegiemon,Ebemon,Unknown,Unknown,Akuma no Nage Kiss | Abduction Kousen | Mutilate,True
-419,Valdurmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+419,Valdurmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 420,Valkyrimon,/digimons_images/Valkyrimon.jpg,Mega,Vaccine / Free,Wind Guardians,Silphymon,Unknown,Unknown,Unknown,FenrirSword | Aurvandil no Ya | Sanction Storm,True
-421,Vamdemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+421,Vamdemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 422,Veedramon,/digimons_images/Veedramon.jpg,Champion,Vaccine,Wind Guardians,Veemon,AeroVeedramon,RedVeedramon,Unknown,V-Breath Arrow | Cutter Shoot,True
-423,Vegimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-424,Venom Vamdemon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+423,Vegimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+424,Venom Vamdemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 425,Venusmon,/digimons_images/Venusmon.jpg,Mega,Vaccine,Unknown,Unknown,Unknown,Unknown,Unknown,Digimon New Century | Digimon New Century,True
 426,Vikemon,/digimons_images/Vikemon.jpg,Mega,Vaccine / Free,Nature Spirits,Shakkoumon,Omnimon Merciful Mode | Omnimon | Rosemon | HerculesKabuterimon | Hououmon | Seraphimon | Magnadramon,Unknown,Unknown,Viking Flail | Berserk Howl,True
-427,V-Mon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+427,V-Mon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 428,Volcamon,/digimons_images/Volcamon.jpg,Ultimate,Data,Metal Empire,Unknown,PileVolcamon,Unknown,Unknown,Big Bang Voice | Big Bang Tackle,True
-429,Vritramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+429,Vritramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 430,Vulcanusmon,/digimons_images/Vulcanusmon.jpg,Mega,Data,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,True
 431,Wanyamon,/digimons_images/Wanyamon.jpg,In-Training,Free,Nature Spirits,Dodomon,Gaomon | Bearmon | Elecmon,Unknown,Unknown,San no Awa | Awa,True
-432,War Greymon,/digimons_images/Placeholder.jpg,Mega,Vaccine,Metal Empire,MetalGreymon (Vaccine),Omnimon | MetalGarurumon | Omnimon Zwart | MetalGarurumon,Unknown,Shoutmon X7F Superior Mode,GaiaForce | DramonKiller | Brave Tornado | Tate no Rocket,True
-433,Waru Seadramon,/digimons_images/Placeholder.jpg,Ultimate,Virus,Deep Savers,Seadramon,Unknown,Unknown,Unknown,Darkstrom | Dramon Attack | Variable Wave,True
+432,War Greymon,/digimons_images/no image,Mega,Vaccine,Metal Empire,MetalGreymon (Vaccine),Omnimon | MetalGarurumon | Omnimon Zwart | MetalGarurumon,Unknown,Shoutmon X7F Superior Mode,GaiaForce | DramonKiller | Brave Tornado | Tate no Rocket,True
+433,Waru Seadramon,/digimons_images/no image,Ultimate,Virus,Deep Savers,Seadramon,Unknown,Unknown,Unknown,Darkstrom | Dramon Attack | Variable Wave,True
 434,Waspmon,/digimons_images/Waspmon.jpg,Champion,Virus,Wind Guardians,FanBeemon,CannonBeemon,Unknown,Unknown,Unknown,True
-435,Wendimon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-436,Were Garurumon,/digimons_images/Placeholder.jpg,Ultimate,Vaccine,Nightmare Soldiers,Garurumon,MetalGarurumon | AncientGarurumon | Omnimon | MetalGreymon (Vaccine) | CresGarurumon | ZeedGarurumon,WereGarurumon Sagittarius Mode,Unknown,Kaiser Nail | Baldy Blow | Engetsugeri,True
+435,Wendimon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+436,Were Garurumon,/digimons_images/no image,Ultimate,Vaccine,Nightmare Soldiers,Garurumon,MetalGarurumon | AncientGarurumon | Omnimon | MetalGreymon (Vaccine) | CresGarurumon | ZeedGarurumon,WereGarurumon Sagittarius Mode,Unknown,Kaiser Nail | Baldy Blow | Engetsugeri,True
 437,Whamon,/digimons_images/Whamon.jpg,Ultimate,Vaccine,Deep Savers,Whamon (Champion),Neptunemon | MarineAngemon,Unknown,Unknown,Jet Arrow | Kuchi de Hasamu Kougeki | Kuchi de Ama~ku Kougeki,True
 438,Wingdramon,/digimons_images/Wingdramon.jpg,Ultimate,Vaccine,Dragon's Roar,Coredramon (Blue),Slayerdramon,Unknown,Unknown,Explode Sonic Lance,True
 439,Wisemon,/digimons_images/Wisemon.jpg,Ultimate,Virus,Nightmare Soldiers,Unknown,Unknown,Unknown,Unknown,Unknown,True
 440,Witchmon,/digimons_images/Witchmon.jpg,Champion,Data,Nightmare Soldiers,Tsukaimon,Bastemon,Unknown,Unknown,Unknown,True
 441,Wizardmon,/digimons_images/Wizardmon.jpg,Champion,Data,Nightmare Soldiers,Candlemon,Phantomon | Mistymon,Unknown,Unknown,Thunder Cloud | Magic Game | Terror Illusion,True
-442,Wolfmon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+442,Wolfmon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 443,Woodmon,/digimons_images/Woodmon.jpg,Champion,Virus,Wind Guardians,Mushroomon,Cherrymon | Argomon (Ultimate),Unknown,Unknown,Branch Drain,True
 444,Wormmon,/digimons_images/Wormmon.jpg,Rookie,Virus / Free,Nature Spirits,Minomon,Stingmon | Hudiemon | Erika Mishima | Digi-Egg Digivolution Chart,Unknown,Unknown,Nebaneba Net | Digimon All-Star Rumble | Petit Tackle,True
-445,Xv-Mon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-446,Yatagaramon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-447,Yukidarumon,/digimons_images/Placeholder.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+445,Xv-Mon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+446,Yatagaramon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+447,Yukidarumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 448,Zanbamon,/digimons_images/Zanbamon.jpg,Mega,Virus,Nightmare Soldiers,Tsumemon,Unknown,Unknown,Unknown,Uchikubi Gokumon | Jūmonji Giri,True
 449,Zubaeagermon,/digimons_images/ZubaEagermon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 450,Zubamon,/digimons_images/Zubamon.jpg,Rookie,Vaccine,Metal Empire,Sakuttomon,ZubaEagermon,Unknown,Unknown,Unknown,True

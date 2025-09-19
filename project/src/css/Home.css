@@ -161,3 +161,38 @@ h1 {
   max-width: 150px;   /* deixa menor */
   margin-left: 80px;  /* joga mais para a direita */
 }
+
+/* Container dos filtros */
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+/* Estilo padrão para selects */
+.filters select {
+  padding: 0.5rem 1rem;
+  border-radius: 24px; /* já arredondou o botão */
+  border: none;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  background: #92e5c6;
+  color: #172432;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  appearance: none; /* remove a seta padrão do select */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+}
+
+
+/* Hover + foco */
+.filters select:hover,
+.filters select:focus {
+  background: red;
+  color: #0e141b;
+}

@@ -360,7 +360,7 @@ body {
 
 /* Unknown */
 .level-badge.unknown {
-  background-color: #B0BEC5; /* cinza claro */
+  background-color: #95a6b5; /* cinza claro */
   color: #172432;
 }
 
@@ -388,7 +388,7 @@ body {
 }
 
 .attribute-badge.unknown {
-  background-color: #172432;
+  background-color: #95a6b5;
   color: #e0e0e0;
 }
 
