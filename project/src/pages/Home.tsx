@@ -3,7 +3,8 @@ import { useEffect, useState, useRef } from "react";
 import Papa from "papaparse";
 import type { Digimon } from "../types/Digimon";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.png';
+import logo from '../assets/logo_story.png';
+import digidexLogo from '../assets/digidex_lg_fixed.png';
 
 function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
@@ -36,7 +37,7 @@ function Home() {
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
-        setVisibleCount((prev) => prev + 12); // carrega mais 12
+        setVisibleCount((prev) => prev + 12); 
       }
     }, { threshold: 1.0 });
 
@@ -53,15 +54,20 @@ function Home() {
 
   return (
     <div className="container">
-      <img id="logo-image" src={logo} alt="Dindex Logo" />
+      <img className="main-logo" src={logo} alt="Dindex Logo" />
+
+      <div className="digi-logo-container">
+        <img className="digi-logo" src={digidexLogo} alt="Digidex Logo" />
+      </div>
+            
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Buscar Digimon..."
+          placeholder="Search Digimon"
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
-            setVisibleCount(12); // reseta quando busca
+            setVisibleCount(12); 
           }}
         />
       </div>
@@ -69,8 +75,8 @@ function Home() {
       {/* CONTADOR DE RESULTADOS */}
       <div className="result-count">
         {digimons.length === 0
-          ? 'Carregando...'
-          : `${filtered.length} / ${digimons.length} encontrados`}
+          ? 'Loading...'
+          : `${filtered.length} / ${digimons.length} digimons`}
       </div>
 
       <div className="grid">
@@ -79,12 +85,12 @@ function Home() {
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
               <div className="card-content">
                 <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
-                <p>{digimon.name}</p>
+                <p className="digi-name">{digimon.name}</p>
               </div>
             </Link>
           ))
         ) : (
-          <div className="not-found">Nenhum Digimon encontrado.</div>
+          <div className="not-found">No Digimon found.</div>
         )}
         {/* loader invisível que dispara o observer */}
         <div ref={loaderRef} />

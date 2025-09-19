@@ -64,22 +64,22 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 63,Caprimon,/digimons_images/Caprimon.png,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 64,Catch Mamemon,/digimons_images/CatchMamemon.jpg,Ultimate,Data,Metal Empire,Unknown,Unknown,Unknown,Unknown,Unknown,True
 65,Centalmon,/digimons_images/Centalmon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-66,Cerberusmon,/digimons_images/Cerberusmon,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+66,Cerberusmon,/digimons_images/Cerberusmon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 67,Cerberusmon  Werewolf Mode,/digimons_images/CerberusmonWerewolfMode.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 68,Ceresmon,/digimons_images/Ceresmon.jpg,Mega,Data,Wind Guardians,Unknown,Unknown,Unknown,Unknown,Famēs,True
 69,Ceresmon Medium,/digimons_images/Ceresmon_Medium.jpg,Mega,Data,Unknown,Blossomon,Unknown,Unknown,Unknown,Phales,True
-70,Chaos Dukemon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+70,Chaos Dukemon,/digimons_images/ChaosDukemon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 71,Chaosdramon,/digimons_images/Chaosdramon.jpg,Mega,Virus,Dragon's Roar,Unknown,Unknown,Unknown,Unknown,Hyper ∞ Cannon | Destroyed Harken,True
 72,Chaosmon,/digimons_images/Chaosmon.jpg,Mega,Vaccine,Unknown,DarkTyrannomon,Unknown,Unknown,Unknown,Haou Ryoudanken,True
-73,Chaosmon  Valdur Arm,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-74,Cherubimon Evil,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-75,Cherubimon Good,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-76,Chimairamon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-77,Choromon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-78,Chronomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-79,Chronomon Destroy,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+73,Chaosmon Valdur Arm,/digimons_images/ChaosmonValdurArm.png,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+74,Cherubimon Evil,/digimons_images/CherubimonEvil.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+75,Cherubimon Good,/digimons_images/CherubimonGood.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+76,Chimairamon,/digimons_images/Chimairamon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+77,Choromon,/digimons_images/Choromon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+78,Chronomon,/digimons_images/Chronomon.png,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+79,Chronomon Destroy,/digimons_images/ChronomonDestroy.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 80,Chrysalimon,/digimons_images/Chrysalimon.jpg,Champion,Virus / Free,Dark Area,Keramon,Infermon,Unknown,Unknown,Unknown,True
-81,Clavis Angemon,/digimons_images/no image,Mega,Vaccine,Wind Guardians,Unknown,Unknown,Unknown,Unknown,Unknown,True
+81,Clavis Angemon,/digimons_images/ClavisAngemon.jpg,Mega,Vaccine,Wind Guardians,Unknown,Unknown,Unknown,Unknown,Unknown,True
 82,Clockmon,/digimons_images/Clockmon.jpg,Champion,Data,Metal Empire,Solarmon,Unknown,Unknown,Shoutmon X7F Superior Mode,Unknown,True
 83,Coelamon,/digimons_images/Coelamon.jpg,Champion,Data,Deep Savers,Crabmon,Unknown,Unknown,Unknown,Variable Darts | Kamitsuki | Water Bullet,True
 84,Coredramon (Blue),/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
@@ -206,8 +206,8 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 205,Jesmon,/digimons_images/Jesmon.jpg,Mega,Data,Virus Busters,SaviorHuckmon,Unknown,Jesmon GX,Unknown,Tekken Seibai | Schwertgeist | OSGenerics,True
 206,Jewelbeemon,/digimons_images/JewelBeemon.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 207,Jumbo Gamemon,/digimons_images/no image,Mega,Data,Deep Savers,Shawjamon,Unknown,Unknown,Unknown,Unknown,True
-208,Junomon,/digimons_images/Junomon.jpg,Mega,Virus,Nightmare Soldiers,Unknown,Unknown,Junomon Hysteric Mode,Unknown,Grace Lance,True
-209,Junomon  Hysteric Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
+208,Junomon,/digimons_images/Junomon.png,Mega,Virus,Nightmare Soldiers,Unknown,Unknown,Junomon Hysteric Mode,Unknown,Grace Lance,True
+209,Junomon Hysteric Mode,/digimons_images/JunomonHisterycMode.jpg,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 210,Jupitermon,/digimons_images/Jupitermon.jpg,Mega,Vaccine,Wind Guardians,Aegiochusmon Holy,Unknown,Jupitermon Wrath Mode,Unknown,Unknown,True
 211,Jupitermon  Wrath Mode,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
 212,Justimon,/digimons_images/Justimon.jpg,Mega,Vaccine,Metal Empire,Unknown,Unknown,Unknown,Unknown,Accel Arm,True
@@ -401,7 +401,7 @@ id,name,image,level,attribute,family,prior_forms,next_forms,lateral_next_forms,d
 400,Togemon,/digimons_images/Togemon.jpg,Champion,Data,Nature Spirits,Palmon,Lillymon | Ponchomon,Unknown,Unknown,Chikuchiku Banban | Mach Jab | Coconuts Punch | Coconut Counter,True
 401,Tokomon,/digimons_images/Tokomon.jpg,In-Training,Data / Free,Wind Guardians,Poyomon,Patamon | Muchomon | Kokatorimon | Parrotmon,Unknown,Unknown,Kamitsuki | Awa | San no Awa,True
 402,Tonosama Gekomon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False
-403,Toy Agumon,/digimons_images/no image,Rookie,Vaccine,Metal Empire,Unknown,Unknown,Unknown,Unknown,Baby Flame | Mullion Punch | Kikai Attack,True
+403,Toy Agumon,/digimons_images/ToyAgumon.jpg,Rookie,Vaccine,Metal Empire,Unknown,Unknown,Unknown,Unknown,Baby Flame | Mullion Punch | Kikai Attack,True
 404,Triceramon,/digimons_images/Triceramon.jpg,Ultimate,Data,Nature Spirits,Tyrannomon,Azulongmon | Dinorexmon | WarGreymon | Machinedramon,Unknown,Unknown,Digimon Adventure V-Tamer 01 | Tai Atari | Fire Breath,True
 405,Tsumemon,/digimons_images/Tsumemon.jpg,In-Training,Free,Nightmare Soldiers,Kuramon,Keramon | Zanbamon | DemiDevimon,Unknown,Unknown,Awa,True
 406,Tuchidarumon,/digimons_images/no image,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,Unknown,False

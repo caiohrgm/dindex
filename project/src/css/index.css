@@ -66,3 +66,10 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@font-face {
+  font-family: 'DigiFont';
+  src: url('../assets/fonts/Pixel Digivolve.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
