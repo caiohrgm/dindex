@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
 .digimon-detail {
   max-width: 400px;   
   min-width: 320px;  
@@ -244,11 +247,11 @@
 .level-badge {
   padding: 5px 10px;
   border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
+  font-size: 0.7rem;
   display: inline-block;
   margin: 4px;
   color: #000;
+  font-family: 'Inter', sans-serif;
 }
 
 /* Level colors in crescent order for dark background #172432 */

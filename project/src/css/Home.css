@@ -138,12 +138,38 @@
 .card-text {
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.button-know-more {
+  background-color: #BFC66B;
+  color: #172432;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-family: 'Kumbh Sans', sans-serif;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+}
+
+.button-know-more:hover {
+  background-color: #9ca74e;
+  /* transform: scale(1.05); */
+  color: white;
 }
 
 .id {
@@ -165,7 +191,6 @@
 
 .description {
   font-size: 0.85rem;
-  font-weight: bold;
   text-align: right;
   font-family: 'Kumbh Sans', sans-serif;
   color: #363131;

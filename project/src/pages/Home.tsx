@@ -163,7 +163,13 @@ function Home() {
                         </span>
                       ))}
                   </div>
+
                   <p className="digi-name">{digimon.name}</p>
+
+                  <div className="card-footer">
+                    <button className="button-know-more">Know More</button>
+                  </div>
+                  
                 </div>
                 <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
               </div>
