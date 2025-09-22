@@ -1,13 +1,7 @@
-/* .container {
-  max-height: 90vh;  
-  overflow-y: auto;   
-  padding: 10px;
-} */
-
 .digimon-detail {
-  max-width: 400px;   /* largura máxima fixa */
-  min-width: 320px;   /* garante que não fique muito estreito */
-  margin: 0 auto;     /* centraliza na tela */
+  max-width: 400px;   
+  min-width: 320px;  
+  margin: 0 auto;    
   background: #fff;
   border-radius: 12px;
   padding: 20px;
