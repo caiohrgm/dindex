@@ -1,22 +1,8 @@
-body {
-  font-family: 'MinhaFonte', sans-serif;
-  background-color: #1e1e1e;
-  margin: 0;
-  padding: 2rem;
-}
-
-.container {
-  max-height: 90vh;   /* ajusta para caber na tela */
-  overflow-y: auto;   /* ativa scroll vertical */
+/* .container {
+  max-height: 90vh;  
+  overflow-y: auto;   
   padding: 10px;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* sempre 2 colunas */
-  gap: 15px;
-  justify-content: center;               /* centraliza */
-}
+} */
 
 .digimon-detail {
   max-width: 400px;   /* largura máxima fixa */
@@ -34,31 +20,6 @@ body {
   max-height: 100px;
   object-fit: contain;
 }
-
-.card {
-  width: 180px;               /* ou até 200px se quiser bem largo */
-  min-height: 200px;          /* aumenta altura para caber nome em 2 linhas */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  background: white;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
-
-.card p {
-  margin-top: 8px;
-  font-size: 14px;
-  font-weight: 500;
-  white-space: normal;   /* permite quebra de linha */
-  overflow: hidden;
-  text-overflow: clip;   /* sem reticências */
-  max-width: 100%;
-}
-
 
 .header {
   /* background-color: #172432; */

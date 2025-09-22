@@ -5,19 +5,15 @@ import type { Digimon } from "../types/Digimon";
 import { Link } from "react-router-dom";
 import logo from '../assets/logo_story.png';
 import digidexLogo from '../assets/digidex_lg_fixed.png';
+import lupaIcon from '../assets/design_icons/search.png';
 
 function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
-
-  // Filter by Level and Attribute:
   const [selectedLevel, setSelectedLevel] = useState("All")
   const [selectedAttribute, setSelectedAttribute] = useState("All")
-
   const loaderRef = useRef<HTMLDivElement | null>(null);
-
-  // Level Colors
   const levelColors: Record<string, string> = {
     "Fresh": "#FFFDE7",        
     "In-Training": "#FFF9C4",  
@@ -34,8 +30,6 @@ function Home() {
   };
 
   const orderedLevels = Object.keys(levelColors).filter(l => l !== "All");
-
-  // Attribute Colors
   const attributeColors: Record<string, string> = {
     "Vaccine": "#a8f0b0",
     "Virus": "#e3a2e7",
@@ -45,7 +39,6 @@ function Home() {
     "Unknown": "#95a6b5",
     "All": "#92e5c6"
   };
-
 
   useEffect(() => {
     Papa.parse("/ingame_digimons.csv", { 
@@ -62,40 +55,37 @@ function Home() {
     });
   }, []);
 
-  // const attributes = Array.from(new Set(digimons.map(d => d.attribute).filter(Boolean)))
   const attributes = Array.from(
   new Set(
     digimons.flatMap(d => (d.attribute ?? '').split('/').map(a => a.trim()))
   )
 );
 
-  // filters:
   const filtered = digimons.filter(d => {
     const matchesSearch = (d.name ?? '').toLowerCase().includes(search.toLowerCase());
     const matchesLevel = selectedLevel === "All" || d.level === selectedLevel;
     const matchesAttribute = selectedAttribute === "All" || (d.attribute ?? '').split('/').map(a => a.trim()).includes(selectedAttribute);
-
     return matchesSearch && matchesLevel && matchesAttribute;
   });
 
-  // observer para scroll infinito
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries[0].isIntersecting) {
-        setVisibleCount((prev) => prev + 12); 
-      }
-    }, { threshold: 1.0 });
+  //Scroll Infinito:
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     if (entries[0].isIntersecting) {
+  //       setVisibleCount((prev) => prev + 12); 
+  //     }
+  //   }, { threshold: 1.0 });
 
-    if (loaderRef.current) {
-      observer.observe(loaderRef.current);
-    }
+  //   if (loaderRef.current) {
+  //     observer.observe(loaderRef.current);
+  //   }
 
-    return () => {
-      if (loaderRef.current) {
-        observer.unobserve(loaderRef.current);
-      }
-    };
-  }, []);
+  //   return () => {
+  //     if (loaderRef.current) {
+  //       observer.unobserve(loaderRef.current);
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div className="container">
@@ -108,17 +98,19 @@ function Home() {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Search Digimon"
+          placeholder="search eg, agumon or gabumon"
           value={search}
           onChange={(e) => {
             setSearch(e.target.value);
-            setVisibleCount(12); 
+            setVisibleCount(9); 
           }}
         />
+        <button>
+          <img src={lupaIcon} alt="Buscar" />
+        </button>
       </div>
 
-      {/* FILTERS */}
-      <div className="filters">
+      {/* <div className="filters">
         <select
           value={selectedLevel}
           onChange={(e) => setSelectedLevel(e.target.value)}
@@ -143,29 +135,43 @@ function Home() {
             ))
           }
         </select>
-      </div>
+      </div> */}
 
       {/* CONTADOR DE RESULTADOS */}
-      <div className="result-count">
+      {/* <div className="result-count">
         {digimons.length === 0
           ? 'Loading...'
           : `${filtered.length} / ${digimons.length} digimons`}
-      </div>
+      </div> */}
 
       <div className="grid">
         {filtered.length > 0 ? (
           filtered.slice(0, visibleCount).map((digimon) => (
             <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
               <div className="card-content">
+                <div className="card-text">
+                  <span className="id">#{digimon.id}</span>
+                  <div className="attribute-tags">
+                    {(digimon.attribute ?? '')
+                      .split('/')
+                      .map(attr => (
+                        <span
+                          key={attr}
+                          className={`attribute-badge ${attr.trim().toLowerCase()}`}
+                        >
+                          {attr.trim()}
+                        </span>
+                      ))}
+                  </div>
+                  <p className="digi-name">{digimon.name}</p>
+                </div>
                 <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
-                <p className="digi-name">{digimon.name}</p>
               </div>
             </Link>
           ))
         ) : (
           <div className="not-found">No Digimon found.</div>
         )}
-        {/* loader invisível que dispara o observer */}
         <div ref={loaderRef} />
       </div>
     </div>
