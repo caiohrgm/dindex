@@ -1,58 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-
 .digimon-detail {
-  max-width: 400px;   
-  min-width: 320px;  
+  width: 1071px;    
+  height: 678px;    
   margin: 0 auto;    
+  margin-top: 50px;
   background: #fff;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;              
+  flex-direction: row;        
+  gap: 20px;                  
 }
 
+.digimon-image-container {
+  flex: 1;                    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
 
-.card img {
-  max-width: 100px;
-  max-height: 100px;
+.dig-image {
+  width: 400px;   
+  height: auto;   
   object-fit: contain;
 }
 
-.header {
-  /* background-color: #172432; */
+.dig-info {
+  flex: 1;                    
+  display: flex;
+  flex-direction: column;    
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.digimon-detail .header {
+  color:black;
   padding: 1rem;
-  text-align: center;
+  text-align: right;
+  text-align: left;
   border-radius: 5%;
+  font-family: 'KumbhSans', sans-serif;
 }
 
 .header h1 {
   margin: 0;
-  color: #000;
+  color: black;
+  padding-bottom: 2px;
 }
 
-.header p {
-  color: #000;
+.sub-header-container {
+  display: flex;                  
+  align-items: center;            
+  padding: 4px 8px;               
+}
+
+.digimon-detail .id {
+  position: static;
+  font-size: 0.8rem;
   font-weight: bold;
+  margin: 0;
+  font-family: "Digifont", monospace;
 }
 
-.digimon-image {
-  width: 100%;
-  max-height: 300px;
-  object-fit: contain;
-  background-color: #eee;
-  margin: 10px 0; /* Espaço entre imagem e outros conteúdos */
-}
-
-.section {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #ddd;
-  width: 100%;
-  text-align: center;
-}
-
-.label {
+.level-span {
+  display: flex;
+  align-items: center;
+  margin-left: 20rem;
+  justify-content: right;
+  font-size: 0.8rem;
   font-weight: bold;
-  color: #555;
+  font-family: "DigiFont", monospace;
+}
+
+.description {
+  font-family: "KumbhSans", sans-serif;
+}
+
+.attack-section {
+  margin-bottom: 20px;
+}
+
+.attack-label {
+  font-family: 'KumbhSans', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
+.attack {
+  margin-bottom: 0.5rem;
+}
+
+.attack-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: left;
+  margin-top: 0.5rem;
+}
+
+.attack-badge {
+  background-color: #172432;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #e0e0e0;
 }
 
 .badges span {
@@ -61,11 +116,7 @@
   border-radius: 20px;
   margin-right: 6px;
   font-size: 0.9rem;
-  color: #000;
-}
-
-.attack {
-  margin-bottom: 0.5rem;
+  color: black;
 }
 
 .evolution-list {
@@ -86,7 +137,6 @@
   white-space: normal;
   text-align: center;
 }
-
 
 .back-button {
   margin-bottom: 5px;
@@ -119,7 +169,7 @@
   font-size: 1.0rem;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease, transform 0.2s ease;
-  font-family: 'Orbitron', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
 }
 
 .btn-back:hover {
@@ -186,6 +236,12 @@
   white-space: normal;
 }
 
+.family-label {
+  font-family: 'KumbhSans', sans-serif;
+  font-weight: 700;
+  color: black;
+}
+
 .family-badge {
   padding: 5px 10px;
   border-radius: 20px;
@@ -243,18 +299,15 @@
   background-color: #b8e994;
 }
 
-.attribute-badge,
 .level-badge {
   padding: 5px 10px;
   border-radius: 20px;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   display: inline-block;
   margin: 4px;
   color: #000;
   font-family: 'Inter', sans-serif;
 }
-
-/* Level colors in crescent order for dark background #172432 */
 
 /* Fresh */
 .level-badge.fresh {
@@ -322,6 +375,17 @@
   color: #172432;
 }
 
+
+.attribute-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: 4px;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+}
+
 /* Attribute colors*/
 .attribute-badge.vaccine {
   background-color: #a8f0b0;
@@ -382,20 +446,4 @@
   color: #fff;
 }
 
-.attack-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  justify-content: center;
-  margin-top: 0.5rem;
-}
-
-.attack-badge {
-  background-color: #172432;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  color: #e0e0e0;
-}
 

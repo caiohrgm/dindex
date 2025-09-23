@@ -53,138 +53,133 @@ function DigimonDetail() {
   return (
     <>
       <div className="digimon-detail">
+
         <div id="back-home-button" className="back-button">
-          <Link to="/" className="btn-back">← Back</Link>
-        </div>
-        <div className="header">
-          <h1>{digimon.name}</h1>
-          <p>
-            Level:{' '}
-            <span className={`level-badge ${digimon.level?.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '').replace(/[^a-z-]/g, '')}`}>
-              {digimon.level}
-            </span>
-          </p>
+          <Link to="/" className="btn-back">Back</Link>
         </div>
 
-        <img
-          className="digimon-image"
-          src={`/${digimon.image.replace(/^\/?/, '')}`}
-          
-          alt={digimon.name}
-          onClick={openModal}
-          style={{ cursor: 'pointer' }}
-          draggable={false}
-        />
-
-        <p className="image-hint">
-          Click on the image to enlarge it.
-        </p>
-
-        <div className="section">
-          <p className="label">Attribute:</p>
-          <div className="badges">
-           {digimon.attribute ? (
-              digimon.attribute.split(',').flatMap((attr, i) => {
-                return attr.split('/').map((subAttr, j) => {
-                  const trimmed = subAttr.trim();
-                  const className = `attribute-badge ${trimmed.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '')}`;
-                  return (
-                    <span key={`${i}-${j}`} className={className}>
-                      {trimmed}
-                    </span>
-                  );
-                });
-              })
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-
-            )}
-          </div>
-        </div>
-
-        <div className="section">
-          <p className="label">Family:</p>
-          <div className="badges">
-            {digimon.family && digimon.family.length > 0 ? (
-              digimon.family.map((fam, i) => {
-                const className = `family-badge ${fam.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`;
-                return <span className={className} key={i}>{fam}</span>;
-              })
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-
-            )}
-          </div>
-        </div>
-
-        <div className="section">
-          <p className="label">Attacks:</p>
-          <div className="attack-list">
-            {digimon.attacks && digimon.attacks.length > 0 ? (
-              digimon.attacks.map((atk, i) => (
-                <span key={i} className="attack-badge">{atk}</span>
-              ))
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-            )}
-          </div>
-        </div>
-
-
-        <div className="section">
-          <p className="label">Prior Digivolutions:</p>
-          <div className="evolution-list evolution-prior">
-            {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
-              digimon.prior_forms.map((form, i) => <span key={i}>{form}</span>)
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-            )}
-          </div>
-
-          <p className="label">Next Digivolutions:</p>
-          <div className="evolution-list evolution-next">
-            {digimon.next_forms && digimon.next_forms.length > 0 ? (
-              digimon.next_forms.map((form, i) => <span key={i}>{form}</span>)
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-            )}
-          </div>
-
-          <p className="label">Lateral Digivolutions:</p>
-          <div className="evolution-list evolution-lateral">
-            {digimon.lateral_next_forms && digimon.lateral_next_forms.length > 0 ? (
-              digimon.lateral_next_forms.map((form, i) => <span key={i}>{form}</span>)
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-            )}
-          </div>
-        </div>
-
-        <div className="section">
-          <p className="label">Digifusions:</p>
-          <div className="evolution-list evolution-digifuse">
-            {digimon.digifuse_forms && digimon.digifuse_forms.length > 0 ? (
-              digimon.digifuse_forms.map((form, i) => <span key={i}>{form}</span>)
-            ) : (
-              <span className="unknown-badge">Unknown</span>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {modalOpen && (
-        <div id="imageModal" className="modal" onClick={closeModal}>
-          <span className="close" onClick={closeModal}>&times;</span>
+        <section className="digimon-image-container">
           <img
-            id="modalImg"
-            className="modal-content"
+            className="dig-image"
             src={`/${digimon.image.replace(/^\/?/, '')}`}
             alt={digimon.name}
-            onClick={(e) => e.stopPropagation()}
+            onClick={openModal}
+            style={{ cursor: 'pointer' }}
             draggable={false}
           />
-        </div>
-      )}
+        </section>
+
+        <section className="dig-info">
+          <div className="header">
+            <div className='sub-header-container'>
+              <p className="id">#{digimon.id}</p>
+              <span className='level-span'> Level:{' '} 
+                <span className={`level-badge ${digimon.level?.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '').replace(/[^a-z-]/g, '')}`}>
+                {digimon.level}
+                </span>
+              </span>
+            </div>
+
+            <h1>{digimon.name}</h1>
+
+            <div className="badges">
+            {digimon.attribute ? (
+                digimon.attribute.split(',').flatMap((attr, i) => {
+                  return attr.split('/').map((subAttr, j) => {
+                    const trimmed = subAttr.trim();
+                    const className = `attribute-badge ${trimmed.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '')}`;
+                    return (
+                      <span key={`${i}-${j}`} className={className}>
+                        {trimmed}
+                      </span>
+                    );
+                  });
+                })
+              ) : (
+                <span className="unknown-badge">Unknown</span>
+              )}
+            </div>
+
+            <div className='description'>
+              <p>Description here</p>
+            </div>
+
+            <div className="attack-section">
+              <p className="attack-label">Attacks</p>
+              <div className="attack-list">
+                {digimon.attacks && digimon.attacks.length > 0 ? (
+                  digimon.attacks.map((atk, i) => (
+                    <span key={i} className="attack-badge">{atk}</span>
+                  ))
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+            <div className="family-section">
+              <p className="family-label">Family:</p>
+              <div className="badges">
+                {digimon.family && digimon.family.length > 0 ? (
+                  digimon.family.map((fam, i) => {
+                    const className = `family-badge ${fam.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`;
+                    return <span className={className} key={i}>{fam}</span>;
+                  })
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+            <div className="prior-digivolutions-section">
+              <p className="prior-digivolution-label">Prior Digivolutions:</p>
+              <div className="evolution-list evolution-prior">
+                {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
+                  digimon.prior_forms.map((form, i) => <span key={i}>{form}</span>)
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>              
+            </div>
+
+            <div className="digivolutions-section">
+              <p className="digivolution-label">Digivolutions</p>
+              <div className="evolution-list evolution-next">
+                {digimon.next_forms && digimon.next_forms.length > 0 ? (
+                  digimon.next_forms.map((form, i) => <span key={i}>{form}</span>)
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+            <div className="side-digivolutions-section">
+              <p className="side-digivolutions-label">Lateral Digivolutions:</p>
+              <div className="evolution-list evolution-lateral">
+                {digimon.lateral_next_forms && digimon.lateral_next_forms.length > 0 ? (
+                  digimon.lateral_next_forms.map((form, i) => <span key={i}>{form}</span>)
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+            <div className="digifusions-section">
+              <p className="digifusions-label">Digifusions:</p>
+              <div className="evolution-list evolution-digifuse">
+                {digimon.digifuse_forms && digimon.digifuse_forms.length > 0 ? (
+                  digimon.digifuse_forms.map((form, i) => <span key={i}>{form}</span>)
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+        
+      </div>
     </>
   );
 }

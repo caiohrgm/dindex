@@ -1,23 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap'); */
 
+/* Digimon Story logo - topo à esquerda, menor */
 .main-logo {
-  display: block;
-  margin: 0 auto 1rem auto;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
 }
 
 .digi-logo-container {
   display: flex;
-  justify-content: center; 
+  justify-content: center;
+  margin-top: 150px;   
+  margin-bottom: 20px; 
 }
 
 .digi-logo {
-  max-width: 250px;   
-  margin-left: 180px; 
+  width: clamp(300px, 40%, 500px); 
+  height: auto;
 }
 
 * {
@@ -26,10 +31,9 @@
   box-sizing: border-box;
 }
 
-/* container ocupa largura total */
 .container {
   width: 100%;
-  max-width: 1400px; /* opcional: limita em telas grandes */
+  max-width: 1400px; 
   margin: 0 auto;
   padding: 1rem;
   box-sizing: border-box;
@@ -38,25 +42,28 @@
 .search-bar {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 20px auto 40px auto;
-  max-width: 600px;
+  margin-top: 40px;
+  max-width: 660px; /* largura do input + botão */
   width: 100%;
-  position: relative; 
+  gap: 10px; /* espaço entre input e botão */
 }
 
 .search-bar input {
-  width: 100%;
-  padding: 14px 50px 14px 20px;
+  flex: 1; /* ocupa todo espaço disponível */
+  padding: 14px 20px;
   border-radius: 10px;
   border: 2px solid #ddd;
   font-size: 16px;
   outline: none;
   background: white;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
 }
+
 
 .search-bar input::placeholder {
   color: #C9B3B3;
@@ -64,22 +71,18 @@
 }
 
 .search-bar button {
-  position: absolute;
-  right: -60px;
-  top: 50%;
-  transform: translateY(-50%);
   background: #f44336;
   border: none;
   color: white;
   padding: 12px;
-  border-radius: 20%;
+  border-radius: 10px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
   width: 50px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* sombra mais forte */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
@@ -88,7 +91,6 @@
   height: 16px;
   object-fit: contain;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -161,7 +163,7 @@
   border: none;
   cursor: pointer;
   font-size: 0.8rem;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: auto;
 }
@@ -179,10 +181,10 @@
   font-size: 0.85rem;
   font-weight: bold;
   color: #363131;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
 }
 .digi-name {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
   font-size: 1.2rem;
   font-weight: bold;
   text-align: left;
@@ -192,12 +194,28 @@
 .description {
   font-size: 0.85rem;
   text-align: right;
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'KumbhSans', sans-serif;
   color: #363131;
 }
 
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'DigitFont', monospace;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 40px 20px;
+  grid-column: 1 / -1;
+}
 
-
+.not-found-img {
+  width: 250px;  
+  height: auto; 
+  opacity: 0.8;
+}
 
 
 /*

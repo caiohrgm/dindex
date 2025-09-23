@@ -4,8 +4,9 @@ import Papa from "papaparse";
 import type { Digimon } from "../types/Digimon";
 import { Link } from "react-router-dom";
 import logo from '../assets/logo_story.png';
-import digidexLogo from '../assets/digidex_lg_fixed.png';
+import digidexLogo from '../assets/digidex_logo_new.png'
 import lupaIcon from '../assets/design_icons/search.png';
+import notFound from '../assets/not_found_image.png';
 
 function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
@@ -89,7 +90,8 @@ function Home() {
 
   return (
     <div className="container">
-      <img className="main-logo" src={logo} alt="Dindex Logo" />
+      <img className="main-logo" src={logo} alt="Digimon Story: Time Stranger logo" />
+      {/* <img className="digi-logo" src={digidexLogo} alt="Digidex Logo" /> */}
 
       <div className="digi-logo-container">
         <img className="digi-logo" src={digidexLogo} alt="Digidex Logo" />
@@ -163,20 +165,23 @@ function Home() {
                         </span>
                       ))}
                   </div>
-
                   <p className="digi-name">{digimon.name}</p>
-
                   <div className="card-footer">
                     <button className="button-know-more">Know More</button>
                   </div>
-                  
                 </div>
                 <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
               </div>
             </Link>
           ))
         ) : (
-          <div className="not-found">No Digimon found.</div>
+          <div className="not-found">
+            <img 
+              src={notFound} 
+              alt="No Digimon found" 
+              className="not-found-img"
+            />
+          </div>
         )}
         <div ref={loaderRef} />
       </div>
