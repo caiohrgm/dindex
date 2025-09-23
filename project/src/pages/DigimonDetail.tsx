@@ -104,21 +104,8 @@ function DigimonDetail() {
               <p>Description here</p>
             </div>
 
-            <div className="attack-section">
-              <p className="attack-label">Attacks</p>
-              <div className="attack-list">
-                {digimon.attacks && digimon.attacks.length > 0 ? (
-                  digimon.attacks.map((atk, i) => (
-                    <span key={i} className="attack-badge">{atk}</span>
-                  ))
-                ) : (
-                  <span className="unknown-badge">Unknown</span>
-                )}
-              </div>
-            </div>
-
-            <div className="family-section">
-              <p className="family-label">Family:</p>
+            <div className="info-section">
+              <p className="digi-info-label">Family:</p>
               <div className="badges">
                 {digimon.family && digimon.family.length > 0 ? (
                   digimon.family.map((fam, i) => {
@@ -131,8 +118,23 @@ function DigimonDetail() {
               </div>
             </div>
 
-            <div className="prior-digivolutions-section">
-              <p className="prior-digivolution-label">Prior Digivolutions:</p>
+            <div className="info-section">
+              <p className="digi-info-label">Attacks</p>
+              <div className="attack-list">
+                {digimon.attacks && digimon.attacks.length > 0 ? (
+                  digimon.attacks.map((atk, i) => (
+                    <span key={i} className="attack-badge">{atk}</span>
+                  ))
+                ) : (
+                  <span className="unknown-badge">Unknown</span>
+                )}
+              </div>
+            </div>
+
+            
+
+            {/* <div className="info-section">
+              <p className="digi-info-label">Prior Digivolutions:</p>
               <div className="evolution-list evolution-prior">
                 {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
                   digimon.prior_forms.map((form, i) => <span key={i}>{form}</span>)
@@ -142,8 +144,8 @@ function DigimonDetail() {
               </div>              
             </div>
 
-            <div className="digivolutions-section">
-              <p className="digivolution-label">Digivolutions</p>
+            <div className="info-section">
+              <p className="digi-info-label">Digivolutions</p>
               <div className="evolution-list evolution-next">
                 {digimon.next_forms && digimon.next_forms.length > 0 ? (
                   digimon.next_forms.map((form, i) => <span key={i}>{form}</span>)
@@ -153,8 +155,8 @@ function DigimonDetail() {
               </div>
             </div>
 
-            <div className="side-digivolutions-section">
-              <p className="side-digivolutions-label">Lateral Digivolutions:</p>
+            <div className="info-section">
+              <p className="digi-info-label">Lateral Digivolutions:</p>
               <div className="evolution-list evolution-lateral">
                 {digimon.lateral_next_forms && digimon.lateral_next_forms.length > 0 ? (
                   digimon.lateral_next_forms.map((form, i) => <span key={i}>{form}</span>)
@@ -164,8 +166,8 @@ function DigimonDetail() {
               </div>
             </div>
 
-            <div className="digifusions-section">
-              <p className="digifusions-label">Digifusions:</p>
+            <div className="info-section">
+              <p className="digi-info-label">Digifusions:</p>
               <div className="evolution-list evolution-digifuse">
                 {digimon.digifuse_forms && digimon.digifuse_forms.length > 0 ? (
                   digimon.digifuse_forms.map((form, i) => <span key={i}>{form}</span>)
@@ -173,12 +175,12 @@ function DigimonDetail() {
                   <span className="unknown-badge">Unknown</span>
                 )}
               </div>
-            </div>
+            </div> */}
 
           </div>
 
         </section>
-        
+
       </div>
     </>
   );

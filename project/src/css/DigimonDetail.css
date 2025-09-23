@@ -76,21 +76,26 @@
 }
 
 .description {
+  text-align: left;
   font-family: "KumbhSans", sans-serif;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
-.attack-section {
-  margin-bottom: 20px;
+.info-section {
+  padding-top: 1rem;
+  margin-bottom: 10px;
 }
 
-.attack-label {
+.digi-info-label {
   font-family: 'KumbhSans', sans-serif;
   font-weight: 700;
   color: black;
+  padding-bottom: 0.2rem;
 }
 
 .attack {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .attack-list {
@@ -100,6 +105,15 @@
   justify-content: left;
   margin-top: 0.5rem;
 }
+
+.evolution-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: left;
+  margin-top: 0.5rem;
+}
+
 
 .attack-badge {
   background-color: #172432;
@@ -117,14 +131,6 @@
   margin-right: 6px;
   font-size: 0.9rem;
   color: black;
-}
-
-.evolution-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 0.5rem;
-  justify-content: center; /* Centraliza as evoluções */
 }
 
 .evolution-list span {
