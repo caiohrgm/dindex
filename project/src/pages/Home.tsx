@@ -15,31 +15,6 @@ function Home() {
   const [selectedLevel, setSelectedLevel] = useState("All")
   const [selectedAttribute, setSelectedAttribute] = useState("All")
   const loaderRef = useRef<HTMLDivElement | null>(null);
-  const levelColors: Record<string, string> = {
-    "Fresh": "#FFFDE7",        
-    "In-Training": "#FFF9C4",  
-    "Rookie": "#FFF176",       
-    "Armor": "#FFEE58",        
-    "Burst": "#FFEB3B",        
-    "Hybrid": "#FDD835",       
-    "Champion": "#FBC02D",     
-    "Ultimate": "#F9A825",     
-    "Mega": "#F57F17",         
-    "Ultra": "#FF6F00",        
-    "Unknown": "#95a6b5",      
-    "All": "#92e5c6"           
-  };
-
-  const orderedLevels = Object.keys(levelColors).filter(l => l !== "All");
-  const attributeColors: Record<string, string> = {
-    "Vaccine": "#a8f0b0",
-    "Virus": "#e3a2e7",
-    "Data": "#6257d8",
-    "Free": "#fef3c7",
-    "Variable": "#9ce0ec",
-    "Unknown": "#95a6b5",
-    "All": "#92e5c6"
-  };
 
   useEffect(() => {
     Papa.parse("/ingame_digimons.csv", { 
@@ -56,12 +31,6 @@ function Home() {
     });
   }, []);
 
-  const attributes = Array.from(
-  new Set(
-    digimons.flatMap(d => (d.attribute ?? '').split('/').map(a => a.trim()))
-  )
-);
-
   const filtered = digimons.filter(d => {
     const matchesSearch = (d.name ?? '').toLowerCase().includes(search.toLowerCase());
     const matchesLevel = selectedLevel === "All" || d.level === selectedLevel;
@@ -69,30 +38,9 @@ function Home() {
     return matchesSearch && matchesLevel && matchesAttribute;
   });
 
-  //Scroll Infinito:
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     if (entries[0].isIntersecting) {
-  //       setVisibleCount((prev) => prev + 12); 
-  //     }
-  //   }, { threshold: 1.0 });
-
-  //   if (loaderRef.current) {
-  //     observer.observe(loaderRef.current);
-  //   }
-
-  //   return () => {
-  //     if (loaderRef.current) {
-  //       observer.unobserve(loaderRef.current);
-  //     }
-  //   };
-  // }, []);
-
   return (
     <div className="container">
       <img className="main-logo" src={logo} alt="Digimon Story: Time Stranger logo" />
-      {/* <img className="digi-logo" src={digidexLogo} alt="Digidex Logo" /> */}
-
       <div className="digi-logo-container">
         <img className="digi-logo" src={digidexLogo} alt="Digidex Logo" />
       </div>
@@ -112,7 +60,114 @@ function Home() {
         </button>
       </div>
 
-      {/* <div className="filters">
+      <div className="grid">
+        {filtered.length > 0 ? (
+          filtered.slice(0, visibleCount).map((digimon) => (
+            <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
+              <div className="card-content">
+
+                <div className="card-text">
+
+                  <span className="id">#{digimon.id}</span>
+
+                  <div className="attribute-tags">
+                    {(digimon.attribute ?? '')
+                      .split('/')
+                      .map(attr => (
+                        <span
+                          key={attr}
+                          className={`attribute-badge ${attr.trim().toLowerCase()}`}
+                        >
+                          {attr.trim()}
+                        </span>
+                      ))}
+                  </div>
+
+                  <p className="digi-name">{digimon.name}</p>
+                  <p className="description">
+                    {digimon.description ? digimon.description : "Still being analyzed..."}
+                  </p>
+
+                  <div className="card-footer">
+                    <button className="button-read-more">Read More</button>
+                  </div>
+
+                </div>
+
+                <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
+
+              </div>
+            </Link>
+          ))
+        ) : (
+          <div className="not-found">
+            <img 
+              src={notFound} 
+              alt="No Digimon found" 
+              className="not-found-img"
+            />
+          </div>
+        )}
+        <div ref={loaderRef} />
+      </div>
+    </div>
+  );
+}
+export default Home;
+
+
+  // const attributes = Array.from(
+  //   new Set(
+  //     digimons.flatMap(d => (d.attribute ?? '').split('/').map(a => a.trim()))
+  //   )
+  // );
+
+  // const levelColors: Record<string, string> = {
+  //   "Fresh": "#FFFDE7",        
+  //   "In-Training": "#FFF9C4",  
+  //   "Rookie": "#FFF176",       
+  //   "Armor": "#FFEE58",        
+  //   "Burst": "#FFEB3B",        
+  //   "Hybrid": "#FDD835",       
+  //   "Champion": "#FBC02D",     
+  //   "Ultimate": "#F9A825",     
+  //   "Mega": "#F57F17",         
+  //   "Ultra": "#FF6F00",        
+  //   "Unknown": "#95a6b5",      
+  //   "All": "#92e5c6"           
+  // };
+
+  // const orderedLevels = Object.keys(levelColors).filter(l => l !== "All");
+  // const attributeColors: Record<string, string> = {
+  //   "Vaccine": "#a8f0b0",
+  //   "Virus": "#e3a2e7",
+  //   "Data": "#6257d8",
+  //   "Free": "#fef3c7",
+  //   "Variable": "#9ce0ec",
+  //   "Unknown": "#95a6b5",
+  //   "All": "#92e5c6"
+  // };
+
+//Scroll Infinito:
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver((entries) => {
+  //     if (entries[0].isIntersecting) {
+  //       setVisibleCount((prev) => prev + 12); 
+  //     }
+  //   }, { threshold: 1.0 });
+
+  //   if (loaderRef.current) {
+  //     observer.observe(loaderRef.current);
+  //   }
+
+  //   return () => {
+  //     if (loaderRef.current) {
+  //       observer.unobserve(loaderRef.current);
+  //     }
+  //   };
+  // }, []);
+
+{/* <div className="filters">
         <select
           value={selectedLevel}
           onChange={(e) => setSelectedLevel(e.target.value)}
@@ -145,48 +200,3 @@ function Home() {
           ? 'Loading...'
           : `${filtered.length} / ${digimons.length} digimons`}
       </div> */}
-
-      <div className="grid">
-        {filtered.length > 0 ? (
-          filtered.slice(0, visibleCount).map((digimon) => (
-            <Link to={`/digimon/${digimon.id}`} key={digimon.id} className="card">
-              <div className="card-content">
-                <div className="card-text">
-                  <span className="id">#{digimon.id}</span>
-                  <div className="attribute-tags">
-                    {(digimon.attribute ?? '')
-                      .split('/')
-                      .map(attr => (
-                        <span
-                          key={attr}
-                          className={`attribute-badge ${attr.trim().toLowerCase()}`}
-                        >
-                          {attr.trim()}
-                        </span>
-                      ))}
-                  </div>
-                  <p className="digi-name">{digimon.name}</p>
-                  <div className="card-footer">
-                    <button className="button-know-more">Know More</button>
-                  </div>
-                </div>
-                <img src={`/${digimon.image.replace(/^\/?/, '')}`} alt={digimon.name} />
-              </div>
-            </Link>
-          ))
-        ) : (
-          <div className="not-found">
-            <img 
-              src={notFound} 
-              alt="No Digimon found" 
-              className="not-found-img"
-            />
-          </div>
-        )}
-        <div ref={loaderRef} />
-      </div>
-    </div>
-  );
-}
-
-export default Home;

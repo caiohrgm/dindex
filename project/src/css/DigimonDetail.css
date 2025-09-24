@@ -15,15 +15,25 @@
 }
 
 .digimon-image-container {
-  flex: 1;                    
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
+
+  /* Borda interna amarela (mais grossa) */
+  border: 4px solid #ffcc03;  
+  border-radius: 12px;        
+  padding: 10px;              
+
+  /* Borda externa azul (mais fina) usando box-shadow */
+  box-shadow: 0 0 0 2px #386abb, 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
+
 .dig-image {
-  width: 400px;   
+  width: 400px;  
+  max-width: 90%; 
   height: auto;   
   object-fit: contain;
 }
@@ -75,11 +85,13 @@
   font-family: "DigiFont", monospace;
 }
 
-.description {
+.digimon-detail .description {
   text-align: left;
+  font-size: 1em;
   font-family: "KumbhSans", sans-serif;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; 
   padding-top: 1rem;
+  margin-top: 12px;
 }
 
 .info-section {
@@ -90,8 +102,10 @@
 .digi-info-label {
   font-family: 'KumbhSans', sans-serif;
   font-weight: 700;
+  font-size: 22px;
   color: black;
   padding-bottom: 0.2rem;
+  margin-top: 6px;
 }
 
 .attack {
@@ -103,7 +117,6 @@
   flex-wrap: wrap;
   gap: 8px;
   justify-content: left;
-  margin-top: 0.5rem;
 }
 
 .evolution-list{
@@ -114,23 +127,16 @@
   margin-top: 0.5rem;
 }
 
-
 .attack-badge {
-  background-color: #172432;
-  border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 0.9rem;
+  background-color: #F6F8FC;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
-  color: #e0e0e0;
-}
-
-.badges span {
-  background-color: #b0f3ea;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-right: 6px;
-  font-size: 0.9rem;
   color: black;
+  display: inline-block;
+  margin: 4px;
+  font-family: 'KumbhSans', sans-serif;
 }
 
 .evolution-list span {
@@ -165,24 +171,25 @@
 }
 
 .btn-back {
-  display: inline-block;
-  background-color: #4fdfee;
-  color: #000;
-  padding: 8px 16px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.0rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  background-color: #BFC66B;
+  color: #172432;
+  padding: 10px 18px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
   font-family: 'KumbhSans', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
 }
 
 .btn-back:hover {
-  background-color: #4ad3e3;
+  background-color: #9ca74e;
   transform: scale(1.05);
-  color: #f0f0f0;  
+  color: white;  
 }
+
 
 .modal {
   position: fixed;
@@ -242,28 +249,24 @@
   white-space: normal;
 }
 
-.family-label {
+/* .family-label {
   font-family: 'KumbhSans', sans-serif;
   font-weight: 700;
   color: black;
-}
+} */
 
-.family-badge {
+.digimon-detail .family-badge {
   padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
   font-weight: bold;
   color: #000;
   display: inline-block;
   margin: 4px;
+  font-family: 'KumbhSans', sans-serif;
 }
 
 /* Cores por família */
-.family-badge.unknown {
-  background-color: #172432;
-  color: #e0e0e0;
-}
-
 .family-badge.dragons-roar {
   background-color: #ffb347;
 }
@@ -305,6 +308,24 @@
   background-color: #b8e994;
 }
 
+.family-badge.unknown {
+  background-color: #ccc;
+  color: black;
+}
+
+.family-unknown-badge {
+  background-color: #ccc;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #000;
+  display: inline-block;
+  margin: 4px;
+  font-family: 'KumbhSans', sans-serif;
+}
+
 .level-badge {
   padding: 5px 10px;
   border-radius: 20px;
@@ -317,79 +338,69 @@
 
 /* Fresh */
 .level-badge.fresh {
-  background-color: #FFFDE7; /* amarelo bem claro */
-  color: #172432;
+  background-color: #FFFDE7; 
+  color: black;
 }
-
 /* In-Training */
 .level-badge.in-training {
-  background-color: #FFF9C4; /* amarelo claro */
-  color: #172432;
+  background-color: #FFF9C4; 
+  color: black;
 }
-
 /* Rookie */
 .level-badge.rookie {
-  background-color: #FFF176; /* amarelo médio */
-  color: #172432;
+  background-color: #FFF176; 
+  color: black;
 }
-
 /* Armor */
 .level-badge.armor {
-  background-color: #FFEE58; /* amarelo intenso */
-  color: #172432;
+  background-color: #FFEE58; 
+  color: black;
 }
-
 /* Burst */
 .level-badge.burst {
-  background-color: #FFEB3B; /* amarelo forte */
-  color: #172432;
+  background-color: #FFEB3B; 
+  color: black;
 }
-
 /* Hybrid */
 .level-badge.hybrid {
-  background-color: #FDD835; /* dourado claro */
-  color: #172432;
+  background-color: #FDD835;
+  color: black;
 }
-
 /* Champion */
 .level-badge.champion {
-  background-color: #FBC02D; /* dourado médio */
-  color: #fff;
+  background-color: #FBC02D; 
+  color: black;
 }
-
 /* Ultimate */
 .level-badge.ultimate {
   background-color: #F9A825; /* dourado escuro */
-  color: #fff;
+  color: black;
 }
-
 /* Mega */
 .level-badge.mega {
   background-color: #F57F17; /* dourado intenso */
-  color: #fff;
+  color: black;
 }
-
 /* Ultra */
 .level-badge.ultra {
   background-color: #FF6F00; /* laranja-dourado bem forte */
-  color: #fff;
+  color: black;
 }
-
 /* Unknown */
 .level-badge.unknown {
-  background-color: #95a6b5; /* cinza claro */
-  color: #172432;
+  background-color: #ccc; 
+  color: black;
 }
 
-
-.attribute-badge {
+.digimon-detail .attribute-badge {
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
   display: inline-block;
   margin: 4px;
   color: #000;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Inter', sans-serif; 
+  margin-top: 10px;
 }
 
 /* Attribute colors*/
@@ -420,16 +431,6 @@
   color: #e0e0e0;
 }
 
-.unknown-badge {
-  background-color: #ccc; /* cinza neutro */
-  color: #333;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  display: inline-block;
-  margin: 4px;
-}
 
 /* Cores distintas para os tipos de evolução */
 .evolution-prior span {

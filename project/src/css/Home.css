@@ -103,7 +103,7 @@
 
 .card {
   width: 344px;
-  height: 196px;
+  height: 225px;
   overflow: hideen;
   background: #FFFFFF;
   border-radius: 12px;
@@ -133,7 +133,17 @@
 .card-content img {
   max-height: 140px;
   object-fit: contain;
-  align-self: center; /* redundante com align-items: center, mas garante o posicionamento */
+  align-self: center;
+}
+
+.description {
+  font-size: 0.75rem; 
+  line-height: 1.2rem; 
+  overflow: hidden;   
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-align: center;
 }
 
 
@@ -155,22 +165,22 @@
   box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
-.button-know-more {
+.button-read-more {
   background-color: #BFC66B;
   color: #172432;
   padding: 8px 16px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-family: 'KumbhSans', sans-serif;
+  font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
   margin-top: auto;
 }
 
-.button-know-more:hover {
+.button-read-more:hover {
   background-color: #9ca74e;
-  /* transform: scale(1.05); */
   color: white;
 }
 
@@ -181,21 +191,33 @@
   font-size: 0.85rem;
   font-weight: bold;
   color: #363131;
-  font-family: 'KumbhSans', sans-serif;
-}
-.digi-name {
-  font-family: 'KumbhSans', sans-serif;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: left;
-  color:#363131;
+  font-family: 'DigiFont', sans-serif;
 }
 
-.description {
-  font-size: 0.85rem;
-  text-align: right;
+.digi-name {
   font-family: 'KumbhSans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
   color: #363131;
+  line-height: 1.1;
+  max-height: 2.4rem; /* altura para no máximo 2 linhas */
+  overflow-wrap: break-word;
+  margin-bottom: -4px;
+  margin-top: 4px;
+}
+
+.container .description {
+  font-size: 0.75rem;
+  text-align: start;
+  font-family: 'KumbhSans', sans-serif;
+  color: black;
+  display: -webkit-box;        
+  -webkit-line-clamp: 5;       
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 12px;
 }
 
 .not-found {
@@ -217,6 +239,32 @@
   opacity: 0.8;
 }
 
+.container .attribute-tags {
+  margin-top: -4px;
+}
+
+.container .attribute-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  display: inline-block;
+  margin: 4px;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+
+/* 
+.container .unknown-badge {
+  background-color: #ccc;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 4px;
+} */
 
 /*
 .container {

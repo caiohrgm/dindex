@@ -100,12 +100,12 @@ function DigimonDetail() {
               )}
             </div>
 
-            <div className='description'>
-              <p>Description here</p>
-            </div>
+            <p className="description">
+              {digimon.description ? digimon.description : "Still being analyzed..."}
+            </p>
 
             <div className="info-section">
-              <p className="digi-info-label">Family:</p>
+              <p className="digi-info-label">Family</p>
               <div className="badges">
                 {digimon.family && digimon.family.length > 0 ? (
                   digimon.family.map((fam, i) => {
@@ -113,7 +113,7 @@ function DigimonDetail() {
                     return <span className={className} key={i}>{fam}</span>;
                   })
                 ) : (
-                  <span className="unknown-badge">Unknown</span>
+                  <span className="family-unknown-badge">Unknown</span>
                 )}
               </div>
             </div>
@@ -130,10 +130,16 @@ function DigimonDetail() {
                 )}
               </div>
             </div>
+          </div>
+        </section>
+      </div>
+    </>
+  );
+}
 
-            
+export default DigimonDetail;
 
-            {/* <div className="info-section">
+ {/* <div className="info-section">
               <p className="digi-info-label">Prior Digivolutions:</p>
               <div className="evolution-list evolution-prior">
                 {digimon.prior_forms && digimon.prior_forms.length > 0 ? (
@@ -176,14 +182,3 @@ function DigimonDetail() {
                 )}
               </div>
             </div> */}
-
-          </div>
-
-        </section>
-
-      </div>
-    </>
-  );
-}
-
-export default DigimonDetail;
