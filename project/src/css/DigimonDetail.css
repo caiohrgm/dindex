@@ -7,6 +7,18 @@
   font-family: 'Inter', sans-serif;
 }
 
+.digimon-card {
+  width: 400px;
+  background: #f9faf9;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
 .card-header {
   display: flex;
   justify-content: center;   /* centraliza o título */
@@ -33,19 +45,6 @@
   font-family: 'DigiFont', sans-serif;           
 }
 
-
-.digimon-card {
-  width: 400px;
-  background: #f9faf9;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 16px;
-}
-
 .digimon-detail .digi-name {
   flex: 1;
   text-align: center;
@@ -63,7 +62,6 @@
   color: black;
 }
 
-/* Imagem */
 .card-image img {
   width: 100%;
   border-radius: 12px;
@@ -114,7 +112,8 @@
 }
 
 .dig-properties {
-  background-color: yellow;;
+  background-color: yellow;
+  height:30px;
 }
 
 .digi-sub-info {
