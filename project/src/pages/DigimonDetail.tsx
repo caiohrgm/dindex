@@ -4,6 +4,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import type { Digimon } from '../types/Digimon';
+import digiHome from '../assets/back_home.png'
 
 function DigimonDetail() {
   const { id } = useParams();
@@ -48,91 +49,86 @@ function DigimonDetail() {
     });
   }, [id]);
 
-  if (!digimon) return <p>Carregando...</p>;
+  if (!digimon) return <p>Digimons Not found!</p>;
 
   return (
     <>
       <div className="digimon-detail">
 
-        <div id="back-home-button" className="back-button">
-          <Link to="/" className="btn-back">Back</Link>
+        {/* Botão Voltar */}
+        <div className="back-button">
+          {/* <Link to="/" className="btn-back">Back</Link> */}
+          <Link to="/">
+            <img 
+              src={digiHome}
+              alt="Back"
+              className="back-icon"
+            />
+          </Link>
         </div>
 
-        <section className="digimon-image-container">
-          <img
-            className="dig-image"
-            src={`/${digimon.image.replace(/^\/?/, '')}`}
-            alt={digimon.name}
-            onClick={openModal}
-            style={{ cursor: 'pointer' }}
-            draggable={false}
-          />
-        </section>
+        <div className="digimon-card">
 
-        <section className="dig-info">
-          <div className="header">
-            <div className='sub-header-container'>
-              <p className="id">#{digimon.id}</p>
-              <span className='level-span'> Level:{' '} 
-                <span className={`level-badge ${digimon.level?.toLowerCase().replace(/\s+/g, '-').replace(/\//g, '').replace(/[^a-z-]/g, '')}`}>
+          <div className="card-header">
+            <h1 className='card-title'> DIGIMON </h1>
+            <span className="digi-id">#{digimon.id}</span>
+          </div>
+
+          <div className="card-image">
+            <img
+              src={`/${digimon.image.replace(/^\/?/, '')}`}
+              alt={digimon.name}
+              draggable={false}
+            />
+          </div>
+
+          <div className='dig-properties'> 
+            <h1 className="digi-name">{digimon.name}</h1>
+            <div className='digi-sub-info'>
+              <span className={`level-badge ${digimon.level?.toLowerCase()}`}>
                 {digimon.level}
-                </span>
               </span>
-            </div>
-
-            <h1>{digimon.name}</h1>
-
-            <div className="badges">
-            {digimon.attribute ? (
-                digimon.attribute.split(',').flatMap((attr, i) => {
-                  return attr.split('/').map((subAttr, j) => {
-                    const trimmed = subAttr.trim();
-                    const className = `attribute-badge ${trimmed.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z-]/g, '')}`;
-                    return (
-                      <span key={`${i}-${j}`} className={className}>
-                        {trimmed}
-                      </span>
-                    );
-                  });
-                })
-              ) : (
-                <span className="unknown-badge">Unknown</span>
-              )}
-            </div>
-
-            <p className="description">
-              {digimon.description ? digimon.description : "Still being analyzed..."}
-            </p>
-
-            <div className="info-section">
-              <p className="digi-info-label">Family</p>
-              <div className="badges">
-                {digimon.family && digimon.family.length > 0 ? (
-                  digimon.family.map((fam, i) => {
-                    const className = `family-badge ${fam.toLowerCase().replace(/\s+/g, '-').replace(/'/g, '')}`;
-                    return <span className={className} key={i}>{fam}</span>;
-                  })
-                ) : (
-                  <span className="family-unknown-badge">Unknown</span>
-                )}
-              </div>
-            </div>
-
-            <div className="info-section">
-              <p className="digi-info-label">Attacks</p>
-              <div className="attack-list">
-                {digimon.attacks && digimon.attacks.length > 0 ? (
-                  digimon.attacks.map((atk, i) => (
-                    <span key={i} className="attack-badge">{atk}</span>
-                  ))
-                ) : (
-                  <span className="unknown-badge">Unknown</span>
+              <div className="card-attributes">
+                {digimon.attribute ? digimon.attribute.split(",").map((attr, i) => (
+                  <span key={i} className={`attribute-badge ${attr.toLowerCase()}`}>
+                    {attr}
+                  </span>
+                )) : (
+                  <span className="attribute-badge unknown">Unknown</span>
                 )}
               </div>
             </div>
           </div>
-        </section>
+
+          {/* Descrição */}
+          <p className="card-description">
+            {digimon.description || "Still being analyzed..."}
+          </p>
+
+          {/* Famílias */}
+          <div className="info-section">
+            <p className="digi-info-label">Family</p>
+            <div className="badges">
+              {digimon.family?.length ? digimon.family.map((fam, i) => (
+                <span key={i} className={`family-badge ${fam.toLowerCase()}`}>
+                  {fam}
+                </span>
+              )) : <span className="family-unknown-badge">Unknown</span>}
+            </div>
+          </div>
+
+          {/* Ataques */}
+          <div className="info-section">
+            <p className="digi-info-label">Attacks</p>
+            <div className="attack-list">
+              {digimon.attacks?.length ? digimon.attacks.map((atk, i) => (
+                <span key={i} className="attack-badge">{atk}</span>
+              )) : <span className="unknown-badge">Unknown</span>}
+            </div>
+          </div>
+        </div>
       </div>
+
     </>
   );
 }
