@@ -5,14 +5,13 @@ import { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 import type { Digimon } from '../types/Digimon';
 import digiHome from '../assets/back_home.png'
+import DigimonCard from "./DigimonCard";
+
 
 function DigimonDetail() {
   const { id } = useParams();
   const [digimon, setDigimon] = useState<Digimon | null>(null);
-  const [modalOpen, setModalOpen] = useState(false);
-
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  // const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     Papa.parse("/ingame_digimons.csv", {
@@ -55,9 +54,7 @@ function DigimonDetail() {
     <>
       <div className="digimon-detail">
 
-        {/* Botão Voltar */}
         <div className="back-button">
-          {/* <Link to="/" className="btn-back">Back</Link> */}
           <Link to="/">
             <img 
               src={digiHome}
@@ -67,8 +64,9 @@ function DigimonDetail() {
           </Link>
         </div>
 
-        <div className="digimon-card">
+        {digimon && <DigimonCard digimon={digimon} />}
 
+        {/* <div className="digimon-card">
           <div className="card-header">
             <h1 className='card-title'> DIGIMON </h1>
             <span className="digi-id">#{digimon.id}</span>
@@ -100,12 +98,12 @@ function DigimonDetail() {
             </div>
           </div>
 
-          {/* Descrição */}
+          
           <p className="card-description">
             {digimon.description || "Still being analyzed..."}
           </p>
 
-          {/* Famílias */}
+          
           <div className="info-section">
             <p className="digi-info-label">Family</p>
             <div className="badges">
@@ -117,7 +115,7 @@ function DigimonDetail() {
             </div>
           </div>
 
-          {/* Ataques */}
+          
           <div className="info-section">
             <p className="digi-info-label">Attacks</p>
             <div className="attack-list">
@@ -126,9 +124,8 @@ function DigimonDetail() {
               )) : <span className="unknown-badge">Unknown</span>}
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-
     </>
   );
 }

@@ -21,9 +21,9 @@
 
 .card-header {
   display: flex;
-  justify-content: center;   /* centraliza o título */
+  justify-content: center;   
   align-items: center;
-  position: relative;        /* permite posicionar o ID dentro */
+  position: relative;        
   width: 100%;
   margin-bottom: 12px;
 }
@@ -103,12 +103,12 @@
   transition: transform 0.2s ease;
 }
 
-.digimon-detail .attribute-badge {
-  color: white;
-}
-
 .back-icon:hover {
   transform: scale(1.1); 
+}
+
+.digimon-detail .attribute-badge {
+  color: white;
 }
 
 .dig-properties {

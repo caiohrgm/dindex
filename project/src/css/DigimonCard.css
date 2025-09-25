@@ -1,0 +1,278 @@
+.tcg-card {
+  width: 100%;              /* ocupa todo o espaço disponível do container */
+  max-width: 400px;         /* aumenta o tamanho máximo do card */
+  min-width: 250px;         /* mantém tamanho mínimo */
+  aspect-ratio: 250 / 350;  /* mantém proporção original */
+  background: #efeff1;
+  border: 2px solid #dddddf;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+
+.tcg-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  font-weight: bold;
+}
+
+.tcg-card .card-title {
+  margin: 0 auto;                
+  font-size: 10px;
+  font-family: 'DigiFont', sans-serif;
+  color: black;
+  position: relative;            
+  top: 14px;                      
+}
+
+.digimon-card-id {
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-family: 'DigiFont', sans-serif;
+  color: black;
+}
+
+.tcg-image {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #efeff1;
+}
+
+.tcg-image img {
+  width: 82%;
+  border-radius: 12px;
+  object-fit: contain;
+  border: 4px solid #ffcc03;       
+  box-shadow: 0 0 0 2px #386abb;   
+}
+
+
+.tcg-info {
+  padding: 0px 10px;
+  background: #efeff1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+}
+
+.tcg-info .name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 2px; 
+  text-align: center;
+  color: black;
+  font-family: 'KumbhSans', sans-serif;
+}
+
+.digicard-name-details {
+  background: #ffcc03;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  width: 85%; 
+  max-width: 100%; 
+  padding: 4px 0; 
+  box-sizing: border-box; 
+}
+
+.tcg-info .digicard-level {
+    color: #ffcc03;
+}
+
+.tcg-info .details {
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: flex-end; 
+  gap: 4px;                  
+  width: 100%;  
+  width: 85%; 
+  max-width: 100%;  
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;    
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;   
+  padding-right: 4px;     
+}
+
+.tcg-info .type {
+  font-size: 12px;
+  color: #555;
+}
+
+.tcg-info .description {
+  font-size: 10px;
+  font-family: 'Inter', sans-serif;
+  width: 90%;            
+  padding: 2px 4px;       
+  color: black;
+  margin-top: 10px;
+  text-align: justify;     
+  line-height: 1.3;       
+  word-break: break-word;  
+  box-sizing: border-box;  
+}
+
+/* .tcg-inherited {
+  background: #ffc107;
+  padding: 4px 8px;
+  font-size: 11px;
+  border-top: 1px solid #aaa;
+} */
+
+.tcg-inherited .label {
+  font-weight: bold;
+}
+
+.attacks-detail {
+    margin-top: 8px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #ffcc03;
+  color: black;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'KumbhSans', sans-serif;
+  font-weight: bold;
+  width: 85%; 
+  max-width: 100%;
+  flex: 1;                   
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-start; 
+  padding: 8px 0;            
+}
+
+.digi-attack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 90%;
+  align-items: center;
+  max-height: 120px;      
+  overflow-y: auto;       
+  padding: 8px 4px 12px;  
+  box-sizing: border-box; 
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+}
+
+.attack-badge {
+  display: block;
+  padding: 4px 8px;
+  background-color: rgba(56, 106, 187, 0.8); /* cor #386abb com 50% de opacidade */
+  border-radius: 6px;
+  width: 100%;               
+  text-align: center;
+  color: white;
+}
+
+.unknown-badge {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  background-color: rgba(0,0,0,0.05);
+  width: 100%;
+  text-align: center;
+}
+
+/* scroll personalizado opcional */
+.digi-attack-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.digi-attack-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 3px;
+}
+
+/* Digivolutions style */
+.digivolutions-section {
+  margin-top: 24px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f6f8fc; 
+  border-radius: 12px;
+}
+
+.digivolutions-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  color: black; 
+}
+
+/* Lista de digivolutions */
+.digivolutions-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap; 
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.digivolutions-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.digivolutions-list::-webkit-scrollbar-thumb {
+  background-color: rgba(56, 106, 187, 0.5);
+  border-radius: 3px;
+}
+
+.digivolutions-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.digivolutions-list p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+  max-width: 110px;         
+  white-space: normal;     
+  word-break: normal;      
+  overflow-wrap: anywhere;
+  color: black;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+.digivolutions-list a:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+
+.digivolution-image {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 4px solid #386abb;
+  margin-bottom: 6px;
+  background-color: white;
+}
+
+.digivolutions-list p {
+  font-size: 0.9rem;
+  margin: 0;
+  text-align: center;
+}
