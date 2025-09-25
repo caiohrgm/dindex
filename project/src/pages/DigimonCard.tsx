@@ -86,9 +86,9 @@ const DigimonCard: React.FC<Props> = ({ digimon }) => {
                     {digivolutions.map((evo) => (
                         <a key={evo.id} href={`/digimon/${evo.id}`}>
                             <img
-                            src={`/${evo.image.replace(/^\/?/, "")}`}
-                            alt={evo.name}
-                            className="digivolution-image"
+                                src={`/digimons_images/${evo.image}`}
+                                alt={evo.name}
+                                className="digivolution-image"
                             />
                             <p>{evo.name}</p>
                         </a>
