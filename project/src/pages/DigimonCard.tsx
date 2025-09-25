@@ -79,23 +79,24 @@ const DigimonCard: React.FC<Props> = ({ digimon }) => {
             </div>
         </div>
 
+
         {/* Seção Digivolutions */}
         {digivolutions.length > 0 && (
-            <div className="digivolutions-section">
-                <h2>Digivolutions</h2>
-                <div className="digivolutions-list">
-                    {digivolutions.map((evo) => (
-                        <Link key={evo.id} to={`/digimon/${evo.id}`}>
-                            <img
-                            src={`/digimons_images/${evo.image}`}
-                            alt={evo.name}
-                            className="digivolution-image"
-                            />
-                            <p>{evo.name}</p>
-                        </Link>
-                        ))}
-                </div>
+        <div className="digivolutions-section">
+            <h2>Digivolutions</h2>
+            <div className="digivolutions-list">
+            {digivolutions.map((evo) => (
+                <Link key={evo.id} to={`/digimon/${evo.id}`} className="digivolution-link">
+                <img
+                    src={`/${evo.image.replace(/^\/?/, "")}`}
+                    alt={evo.name}
+                    className="digivolution-image"
+                />
+                <p>{evo.name}</p>
+                </Link>
+            ))}
             </div>
+        </div>
         )}
         </>
     );
