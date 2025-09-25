@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import type { Digimon } from "../types/Digimon";
 import Papa from "papaparse";
 import "../css/DigimonCard.css";
+import { Link } from "react-router-dom";
 
 type Props = {
   digimon: Digimon;
@@ -84,15 +85,15 @@ const DigimonCard: React.FC<Props> = ({ digimon }) => {
                 <h2>Digivolutions</h2>
                 <div className="digivolutions-list">
                     {digivolutions.map((evo) => (
-                        <a key={evo.id} href={`/digimon/${evo.id}`}>
+                        <Link key={evo.id} to={`/digimon/${evo.id}`}>
                             <img
-                                src={`/digimons_images/${evo.image}`}
-                                alt={evo.name}
-                                className="digivolution-image"
+                            src={`/digimons_images/${evo.image}`}
+                            alt={evo.name}
+                            className="digivolution-image"
                             />
                             <p>{evo.name}</p>
-                        </a>
-                    ))}
+                        </Link>
+                        ))}
                 </div>
             </div>
         )}
