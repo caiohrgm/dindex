@@ -11,8 +11,7 @@ import DigimonCard from "./DigimonCard";
 function DigimonDetail() {
   const { id } = useParams();
   const [digimon, setDigimon] = useState<Digimon | null>(null);
-  // const [modalOpen, setModalOpen] = useState(false);
-
+  
   useEffect(() => {
     Papa.parse("/ingame_digimons.csv", {
       header: true,
@@ -66,65 +65,6 @@ function DigimonDetail() {
 
         {digimon && <DigimonCard digimon={digimon} />}
 
-        {/* <div className="digimon-card">
-          <div className="card-header">
-            <h1 className='card-title'> DIGIMON </h1>
-            <span className="digi-id">#{digimon.id}</span>
-          </div>
-
-          <div className="card-image">
-            <img
-              src={`/${digimon.image.replace(/^\/?/, '')}`}
-              alt={digimon.name}
-              draggable={false}
-            />
-          </div>
-
-          <div className='dig-properties'> 
-            <h1 className="digi-name">{digimon.name}</h1>
-            <div className='digi-sub-info'>
-              <span className={`level-badge ${digimon.level?.toLowerCase()}`}>
-                {digimon.level}
-              </span>
-              <div className="card-attributes">
-                {digimon.attribute ? digimon.attribute.split(",").map((attr, i) => (
-                  <span key={i} className={`attribute-badge ${attr.toLowerCase()}`}>
-                    {attr}
-                  </span>
-                )) : (
-                  <span className="attribute-badge unknown">Unknown</span>
-                )}
-              </div>
-            </div>
-          </div>
-
-          
-          <p className="card-description">
-            {digimon.description || "Still being analyzed..."}
-          </p>
-
-          
-          <div className="info-section">
-            <p className="digi-info-label">Family</p>
-            <div className="badges">
-              {digimon.family?.length ? digimon.family.map((fam, i) => (
-                <span key={i} className={`family-badge ${fam.toLowerCase()}`}>
-                  {fam}
-                </span>
-              )) : <span className="family-unknown-badge">Unknown</span>}
-            </div>
-          </div>
-
-          
-          <div className="info-section">
-            <p className="digi-info-label">Attacks</p>
-            <div className="attack-list">
-              {digimon.attacks?.length ? digimon.attacks.map((atk, i) => (
-                <span key={i} className="attack-badge">{atk}</span>
-              )) : <span className="unknown-badge">Unknown</span>}
-            </div>
-          </div>
-        </div> */}
       </div>
     </>
   );
