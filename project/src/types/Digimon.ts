@@ -1,6 +1,7 @@
 export interface Digimon {
   id: string | undefined;
   name: string;
+  description?: string; 
   level: string;
   image: string;
   attribute?: string;

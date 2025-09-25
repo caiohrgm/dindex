@@ -1,198 +1,280 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-.digi-name {
-  font-family: 'Press Start 2P', cursive;
+.main-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 250px;
 }
 
-/* Reset */
+.digi-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;   
+  margin-bottom: 20px; 
+}
+
+.digi-logo {
+  width: clamp(300px, 40%, 500px); 
+  height: auto;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  background: #1e1e1e;
-  font-family: 'Segoe UI', sans-serif;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
 .container {
-  background: #172432;
-  border-radius: 16px;
+  width: 100%;
+  max-width: 1400px; 
+  margin: 0 auto;
   padding: 1rem;
-  width: 100%;            /* ou algo mais largo */
-  max-width: 1000px;      /* permite 4 cards de 150px + gaps */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  box-sizing: border-box;
 }
 
-/* Título */
-h1 {
-  font-size: 1.5rem;
-  color: white;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* Search bar */
 .search-bar {
   display: flex;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 1rem;
-  background: #92e5c6;
-  border-radius: 24px;
-  padding: 0.5rem;
+  margin: 20px auto 40px auto;
+  margin-top: 40px;
+  max-width: 660px; /* largura do input + botão */
+  width: 100%;
+  gap: 10px; /* espaço entre input e botão */
 }
 
 .search-bar input {
-  border: none;
+  flex: 1; /* ocupa todo espaço disponível */
+  padding: 14px 20px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  font-size: 16px;
   outline: none;
-  flex: 1;
-  padding: 0.5rem;
-  border-radius: 24px;
-  font-size: 1rem;
-  background-color: rgb(255, 255, 255);
+  background: white;
+  font-family: 'KumbhSans', sans-serif;
   color: black;
-  font-family: 'DigiFont', monospace;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
 }
 
-/* Card grid */
+
+.search-bar input::placeholder {
+  color: #C9B3B3;
+  opacity: 1; 
+}
+
+.search-bar button {
+  background: #f44336;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  background: white;
-  padding: 1rem;
-  border-radius: 12px;
-  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
-/* Individual  card */
 .card {
-  background: #f6f6f6;
-  border-radius: 8px;
-  padding: 0.5rem;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  color: black;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.card img {
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-  margin-bottom: 0.5rem;
-}
-
-.card-content {
+  width: 344px;
+  height: 225px;
+  overflow: hideen;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;   
-  height: 100%;     
-}
-
-.digi-name {
-  color: #172432;
-  font-family: 'Press Start 2P', cursive;
-}
-
-.card:hover .digi-name {
-  color: #81d8b6;  /* cor no hover */
-}
-
-.card:hover {
-  transform: scale(1.02);
-}
-
-.not-found {
-  font-family: 'Orbitron', sans-serif;;
-  text-align: right;
-  color: #1e1e1e;
-  font-size: 1.2rem;
-  padding: 40px 20px;
-  grid-column: 1 / -1; 
-  opacity: 0.8;
-  animation: fadeIn 0.3s ease-in;
-}
-
-.result-count {
-  color: #fae8a5;
-  font-family: 'DigiFont', monospace;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-align: right; /* pushes text to the right */
-  margin: 10px 0;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 0.8; }
-}
-
-/* Logo principal */
-.main-logo {
-  display: block;
-  max-width: 300px;
-  margin: 0 auto 1rem auto;
-}
-
-/* Container da logo secundária */
-.digi-logo-container {
-  display: flex;
-  justify-content: center; 
-  margin-top: -40px;    
-  margin-bottom: 50px;
-  margin-left: 50px;  
-}
-
-/* Logo Digidex */
-.digi-logo {
-  max-width: 150px;   /* deixa menor */
-  margin-left: 80px;  /* joga mais para a direita */
-}
-
-/* Container dos filtros */
-.filters {
-  display: flex;
+  justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1rem;
-  justify-content: center;
-}
-
-/* Estilo padrão para selects */
-.filters select {
-  padding: 0.5rem 1rem;
-  border-radius: 24px; /* já arredondou o botão */
-  border: none;
-  font-size: 1rem;
-  font-family: 'Orbitron', sans-serif;
-  background: #92e5c6;
-  color: #172432;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  outline: none;
-  appearance: none; /* remove a seta padrão do select */
-  -webkit-appearance: none;
-  -moz-appearance: none;
   position: relative;
 }
 
+.card-content {
+  max-height: 100%;
+  overflow: hidden;
+  flex:1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
 
-/* Hover + foco */
-.filters select:hover,
-.filters select:focus {
-  background: red;
-  color: #0e141b;
+.card-content img {
+  max-height: 140px;
+  object-fit: contain;
+  align-self: center;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.button-read-more {
+  background-color: #BFC66B;
+  color: #172432;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-family: 'KumbhSans', sans-serif;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: auto;
+}
+
+.button-read-more:hover {
+  background-color: #9ca74e;
+  color: white;
+}
+
+.id {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #363131;
+  font-family: 'DigiFont', sans-serif;
+}
+
+.digi-name {
+  font-family: 'KumbhSans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-align: left;
+  color: #363131;
+  line-height: 1.1;
+  max-height: 2.4rem; /* altura para no máximo 2 linhas */
+  overflow-wrap: break-word;
+  margin-bottom: -4px;
+  margin-top: 4px;
+}
+
+.container .description {
+  font-size: 0.75rem;
+  text-align: start;
+  line-height: 1.1rem;
+  font-family: 'KumbhSans', sans-serif;
+  color: black;
+  display: -webkit-box;        
+  -webkit-line-clamp: 5;       
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 12px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-family: 'DigitFont', monospace;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 40px 20px;
+  grid-column: 1 / -1;
+}
+
+.not-found-img {
+  width: 250px;  
+  height: auto; 
+  opacity: 0.8;
+}
+
+.digimon-detail .attribute-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin: 4px;
+  color: #000;
+  font-family: 'Inter', sans-serif; 
+  margin-top: 10px;
+}
+
+.container .attribute-tags {
+  margin-top: -4px;
+}
+
+.container .attribute-badge {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  display: inline-block;
+  margin: 4px;
+  color: black;
+  font-family: 'Inter', sans-serif;
+}
+
+.container .attribute-badge.vaccine {
+  background-color: #a8f0b0;
+}
+
+.container  .attribute-badge.virus {
+  background-color: #e3a2e7;
+}
+
+.container .attribute-badge.data {
+  background-color: #6257d8;
+  color: #E0E0E0;
+}
+
+.container  .attribute-badge.free {
+  background-color: #fef3c7;
+}
+
+.container  .attribute-badge.variable {
+  background-color: #9ce0ec;
+}
+
+.container  .attribute-badge.unknown {
+  background-color: #95a6b5;
+  color: #e0e0e0;
+}
+
+.container .attribute-badge {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  background: #eee;
 }
