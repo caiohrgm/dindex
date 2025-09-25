@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import '../css/Home.css';
 import { useEffect, useState, useRef } from "react";
 import Papa from "papaparse";
@@ -12,8 +13,8 @@ function Home() {
   const [digimons, setDigimons] = useState<Digimon[]>([]);
   const [search, setSearch] = useState("");
   const [visibleCount, setVisibleCount] = useState(12);
-  const [selectedLevel, setSelectedLevel] = useState("All")
-  const [selectedAttribute, setSelectedAttribute] = useState("All")
+  const [selectedLevel, _setSelectedLevel] = useState("All")
+  const [selectedAttribute, _setSelectedAttribute] = useState("All")
   const loaderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
